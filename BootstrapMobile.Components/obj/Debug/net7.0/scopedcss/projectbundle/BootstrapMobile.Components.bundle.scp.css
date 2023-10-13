@@ -75,10 +75,15 @@ nav[b-7647d4ez0x] {
     background: var(--bs-gray-200);
 }
 /* _content/BootstrapMobile.Components/Components/BTab.razor.rz.scp.css */
-.nav-item[b-91ae245q4l]  a.active {
-    background-color: rgb(18 18 18 / 17%);
-    border-radius: 5px;
+.nav-item[b-91ae245q4l]  a {
+    color: var(--bs-gray-600);
 }
+
+    .nav-item[b-91ae245q4l]  a.active {
+/*        background-color: rgb(18 18 18 / 17%);*/
+        border-radius: 5px;
+        color: var(--bs-link-color)
+    }
 /* _content/BootstrapMobile.Components/Components/BTabbar.razor.rz.scp.css */
 div[b-lvdkavxkbh] {
     height: 10vh;

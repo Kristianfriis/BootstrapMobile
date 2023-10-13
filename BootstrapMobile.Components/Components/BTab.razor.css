@@ -1,4 +1,8 @@
-.nav-item ::deep a.active {
-    background-color: rgb(18 18 18 / 17%);
-    border-radius: 5px;
+.nav-item ::deep a {
+    color: var(--bs-gray-600);
 }
+
+    .nav-item ::deep a.active {
+        border-radius: 5px;
+        color: var(--bs-link-color)
+    }

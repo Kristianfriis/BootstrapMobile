@@ -198,15 +198,15 @@
       "mscorlib.dll": "sha256-8OmdVHzoN7xteY5ehp0L8R17I9QxFkH2lUVHFuslE0s=",
       "netstandard.dll": "sha256-urq+e2ZQXxmOWMRxTR92529HnUVu6+kyVnfF6SoLad8=",
       "System.Private.CoreLib.dll": "sha256-ixnF\/wVKLHZM1N0lfJufpZ41EC2LvvyiSqdW43h3Xew=",
-      "BootstrapMobile.Components.dll": "sha256-wUyi8wiSR9mWbhLJmZ1WQYm\/fqpzuGg+EKwkrcoi3O0=",
-      "BootstrapMobile.Wasm.dll": "sha256-i3DRBmeWk\/YGitx+wzJs1\/vY0Of4Dm56zjAjm7HPqLs="
+      "BootstrapMobile.Components.dll": "sha256-Ll3Jxqbq4l4NNWj+AS8DE\/PJpGDnmAaS6ZiC6cKkmN8=",
+      "BootstrapMobile.Wasm.dll": "sha256-HoDFsVJBabVWg\/qoMdYXa4dTDLmKFlClsAuBl3uWnlg="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "BootstrapMobile.Components.pdb": "sha256-ADnJnTwlvFls0CDtydBfD3hrJPNQiae9HXWcHLQjNgA=",
-      "BootstrapMobile.Wasm.pdb": "sha256-dWcLZKKK77LwXWitAc\/EhbRi658zLkaaVA9ySYJW\/ig="
+      "BootstrapMobile.Components.pdb": "sha256-TGUIYnm81Ju3huMWM\/whN9mWoxvnab0fO57vRCVztlY=",
+      "BootstrapMobile.Wasm.pdb": "sha256-VSM2QtZxNXkmo6eI28tMYWDBzqd4IkwY1+MGsBYbr4I="
     },
     "runtime": {
       "dotnet.7.0.12.kuaok8eruw.js": "sha256-cPJgWy8SjMaYFeimGkYy23ls+rDZVmoC\/eMoHpqRc+4=",

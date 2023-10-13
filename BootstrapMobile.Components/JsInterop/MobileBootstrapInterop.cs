@@ -10,7 +10,7 @@ public class MobileBootstrapInterop : IAsyncDisposable
     public MobileBootstrapInterop(IJSRuntime jsRuntime)
     {
         moduleTask = new(() => jsRuntime.InvokeAsync<IJSObjectReference>(
-            "import", "./_content/BootstrapMobile.Components/exampleJsInterop.js").AsTask());
+            "import", "./_content/BootstrapMobile.Components/exampleJsInterop.js?2").AsTask());
     }
 
     public async ValueTask GoBack()

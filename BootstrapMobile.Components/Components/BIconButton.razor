@@ -1,10 +1,11 @@
-﻿<button class="navbar-toggler nav-link text-body border-0" type="button" @onclick="InvokeParentMethod" @attributes=AllOtherAttributes>
+﻿<button class="navbar-toggler nav-link text-body border-0 @Invisible()" type="button" @onclick="InvokeParentMethod" @attributes=AllOtherAttributes>
     <span class="@Icon @Size align-middle" aria-hidden="true"></span>
 </button>
 
 @code {
     [Parameter] public string Icon { get; set; } = string.Empty;
     [Parameter] public string Size { get; set; } = "fs-4";
+    [Parameter] public bool Visible { get; set; } = true;
     [Parameter] public EventCallback OnClick { get; set; }
 
     [Parameter(CaptureUnmatchedValues = true)]
@@ -17,5 +18,13 @@
         if (!OnClick.HasDelegate)
             return;
         await OnClick.InvokeAsync();
+    }
+
+    private string Invisible()
+    {
+        if (!Visible)
+            return " invisible";
+
+        return string.Empty;
     }
 }

@@ -10,5 +10,7 @@ export function CanGoBack() {
 }
 
 export function toggleOffCanvas(el) {
-    el.toggle();
+    const myOffcanvas = document.getElementById(el.id)
+
+    myOffcanvas.toggle();
 }

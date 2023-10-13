@@ -1,13 +1,7 @@
 ﻿@inject MobileBootstrapInterop HistoryInterop
 <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
-        @if (BackButton)
-        {
-            <!-- Back Arrow -->
-            <a class="nav-link text-body">
-                <i class="@CreateClass()" aria-hidden="true" @onclick="Back"></i>
-            </a>
-        }
+        <BIconButton Icon="oi oi-chevron-left" OnClick="Back" Visible="BackButton"></BIconButton>
 
         @if(!BackButton && BApp!.Hamburger)
         {
@@ -22,9 +16,7 @@
          <!-- Icon Button -->
             @if(HeaderIcon == null)
             {
-            <a class="nav-link text-body">
-                <i class="oi oi-cog fs-4 invisible align-middle" aria-hidden="true"></i>
-            </a>
+                <BIconButton Icon="oi oi-chevron-left" OnClick="Back" Visible="false"></BIconButton>
             }else
             {
             @HeaderIcon

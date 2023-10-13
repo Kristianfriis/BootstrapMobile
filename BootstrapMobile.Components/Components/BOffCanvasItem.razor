@@ -1,15 +1,21 @@
-﻿@inject MobileBootstrapInterop JsInterop
+﻿@inject NavigationManager NavigationManager
 
-<a href="@Href" class="list-group-item list-group-item-action" @onclick="ItemClick">@Name</a>
+<a class="list-group-item list-group-item-action hstack gap-3" data-bs-toggle="offcanvas" href="@Constants.OffCanvasTarget" role="button" aria-controls="offcanvasExample" @onclick="ItemClick">
+    @if (!string.IsNullOrEmpty(Icon))
+    {
+        <span class="@Icon" aria-hidden="true"></span>
+    }
+    @Name
+</a>
 
 @code {
     [Parameter] public string Href { get; set; } = string.Empty;
     [Parameter] public string Name { get; set; } = string.Empty;
+    [Parameter] public string Icon { get; set; } = string.Empty;
     [CascadingParameter] internal BOffCanvas? bOffCanvas { get; set; }
 
-    private async Task ItemClick()
+    private void ItemClick()
     {
-        if (bOffCanvas != null && bOffCanvas.OffCanvasRef != null)
-            await JsInterop.ToogleOffCanvas(bOffCanvas.OffCanvasRef.Value);
+        NavigationManager.NavigateTo(Href);
     }
 }
