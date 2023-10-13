@@ -1,0 +1,17 @@
+﻿@typeparam TItem
+
+<select class="form-select" aria-label="Default select example" style="max-width: 50%;" @onchange="UpdateValue">
+    @ChildContent
+</select>
+
+@code {
+    [Parameter]public TItem Value { get; set; }
+    [Parameter]public EventCallback<TItem> ValueChanged { get; set; }
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+
+    async Task UpdateValue(ChangeEventArgs args)
+    {
+        Value = (TItem)args.Value!;
+        await ValueChanged.InvokeAsync(Value);
+    }
+}

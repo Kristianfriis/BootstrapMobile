@@ -1,11 +1,22 @@
 ﻿@inject NavigationManager NavigationManager
 
-<a class="list-group-item list-group-item-action hstack gap-3" data-bs-toggle="offcanvas" href="@Constants.OffCanvasTarget" role="button" aria-controls="offcanvasExample" @onclick="ItemClick">
-    @if (!string.IsNullOrEmpty(Icon))
+<a class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" data-bs-toggle="offcanvas" href="@Constants.OffCanvasTarget" role="button" aria-controls="offcanvasExample" @onclick="ItemClick">
+    <div class="hstack gap-3 text-body">
+        @if (!string.IsNullOrEmpty(Icon))
+        {
+            <div class="text-body align-middle" style="height: 100%;">
+                <span class="@Icon fs-4" aria-hidden="true"></span>
+            </div>
+
+        }
+        @Name
+    </div>
+
+
+    @if (!string.IsNullOrEmpty(Href))
     {
-        <span class="@Icon" aria-hidden="true"></span>
+        <span class="oi oi-chevron-right fs-4 text-muted" aria-hidden="true"></span>
     }
-    @Name
 </a>
 
 @code {

@@ -16,12 +16,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Playground\BootstrapMobile\BootstrapMobile.Components
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BList.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BListItem.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCTGlzdEl0ZW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BOffCanvas.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCT2ZmQ2FudmFzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BOffCanvasItem.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCT2ZmQ2FudmFzSXRlbS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BSelect.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCU2VsZWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BSpan.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCU3Bhbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BToolbar.razor]
@@ -52,6 +68,14 @@ build_metadata.AdditionalFiles.CssScope = b-7647d4ez0x
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCSWNvbkJ1dHRvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-79x8qe5hiw
 
+[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BOverlay.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCT3ZlcmxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-ojenhq1udm
+
+[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BPullToRefresh.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCUHVsbFRvUmVmcmVzaC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-yhj7ybt2hr
+
 [C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BTab.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCVGFiLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-91ae245q4l
@@ -59,3 +83,7 @@ build_metadata.AdditionalFiles.CssScope = b-91ae245q4l
 [C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BTabbar.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCVGFiYmFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-lvdkavxkbh
+
+[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BToggle.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCVG9nZ2xlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-tvh693croa

@@ -1,0 +1,11 @@
+﻿<ul class="list-group list-group-flush">
+    @ChildContent
+    @if (ChildContent != null)
+    {
+        <li class="list-group-item"></li>
+    }
+</ul>
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+}

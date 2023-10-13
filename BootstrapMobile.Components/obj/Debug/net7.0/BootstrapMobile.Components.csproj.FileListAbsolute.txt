@@ -27,3 +27,6 @@ C:\Playground\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\scoped
 C:\Playground\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\scopedcss\Components\BTabbar.razor.rz.scp.css
 C:\Playground\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\scopedcss\Components\BContent.razor.rz.scp.css
 C:\Playground\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\scopedcss\Components\BIconButton.razor.rz.scp.css
+C:\Playground\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\scopedcss\Components\BPullToRefresh.razor.rz.scp.css
+C:\Playground\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\scopedcss\Components\BOverlay.razor.rz.scp.css
+C:\Playground\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\scopedcss\Components\BToggle.razor.rz.scp.css

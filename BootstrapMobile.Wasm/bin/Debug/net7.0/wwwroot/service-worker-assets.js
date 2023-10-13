@@ -825,19 +825,19 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-Ll3Jxqbq4l4NNWj+AS8DE\/PJpGDnmAaS6ZiC6cKkmN8=",
+      "hash": "sha256-8ou6g19yuvMVu99i8ho2gF7nW1vhmJxsVqQik5LZZM8=",
       "url": "_framework\/BootstrapMobile.Components.dll"
     },
     {
-      "hash": "sha256-TGUIYnm81Ju3huMWM\/whN9mWoxvnab0fO57vRCVztlY=",
+      "hash": "sha256-74apkcQSZr82nNCrXtlm3NqrI5LmQfwGdkfQi0YtGT4=",
       "url": "_framework\/BootstrapMobile.Components.pdb"
     },
     {
-      "hash": "sha256-tVaaApuBanNLhqmNpdqGMpudo6De+bv+i14Purbn31Q=",
+      "hash": "sha256-wiubFZJPSygkNrVd\/wukLuEhaqLaof1HVy+SCDExLZk=",
       "url": "_framework\/BootstrapMobile.Wasm.dll"
     },
     {
-      "hash": "sha256-HtBRTK25mqcvNR1xrIgCYGchssfLvUzFseF7gVt5Q2M=",
+      "hash": "sha256-dK8f5ud\/LzTW9DxZUa4HqOzk1QNm9JQ0DlINuCCkmjA=",
       "url": "_framework\/BootstrapMobile.Wasm.pdb"
     },
     {
@@ -845,15 +845,15 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-Yaw5oSh7akmqtryumJlIZayONtSV2CeM7IdIgldkk0Y=",
+      "hash": "sha256-rnXyliYeuU73D5kfBiSyF\/5NXlDCyXyps9xzovmgN6A=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-NbNs2+XUZZ9Q0jlKvNmsfV2Jd+glnbTVQW5q8+5GQEk=",
+      "hash": "sha256-+eHa2rB5dWxWOtAWZwqaFHiweK\/tijwxkK+E3WJOXtU=",
       "url": "_content\/BootstrapMobile.Components\/BootstrapMobile.Components.bundle.scp.css"
     },
     {
-      "hash": "sha256-rSLktKrkZntxEtLmtDZZz4qhWsiVHuowNDWLoJmC8sU=",
+      "hash": "sha256-oPz0cdQQuwYt6o0P3oy20hxbAsvRPDyio\/Vnj++Aqmo=",
       "url": "_content\/BootstrapMobile.Components\/css\/app.css"
     },
     {
@@ -909,5 +909,5 @@
       "url": "_content\/BootstrapMobile.Components\/exampleJsInterop.js"
     }
   ],
-  "version": "XzOjeVno"
+  "version": "yySthPnM"
 };

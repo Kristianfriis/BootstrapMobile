@@ -1,0 +1,58 @@
+﻿<div class="pull-to-refresh" @ontouchstart="TouchStart" @ontouchmove="TouchMove" @ontouchend="TouchEnd">
+    <div class="pull-spinner @visible">
+        <div class="spinner-border"></div>
+    </div>
+
+    @ChildContent
+</div>
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public EventCallback Refresh { get; set; }
+
+    string visible = string.Empty;
+    private double minimumSwipeDistance = 250;
+    private readonly double OptimalSwipeSpeedMilliseconds = 0.8;
+
+    private (TouchPoint ReferencePoint, DateTime StartTime) StartTouch;
+
+    void TouchStart(TouchEventArgs args)
+    {
+        var reference = args.Touches[0];
+        StartTouch.ReferencePoint = args.Touches[0];
+        StartTouch.StartTime = DateTime.Now;
+    }
+
+    void TouchMove(TouchEventArgs args)
+    {
+        var touchY = args.Touches[0].ClientY;
+        var touchDiff = touchY - StartTouch.ReferencePoint.ClientY;
+
+        if (touchDiff > minimumSwipeDistance)
+        {
+            visible = "visible";
+        }
+    }
+
+    private async Task TouchEnd(TouchEventArgs args)
+    {
+        var reference = args.ChangedTouches[0];
+
+        var diffX = StartTouch.ReferencePoint.ClientY - reference.ClientY;
+        var diffTime = DateTime.Now - StartTouch.StartTime;
+
+        var velocityY = Math.Abs(diffX / diffTime.TotalMilliseconds);
+
+        if (velocityY >= OptimalSwipeSpeedMilliseconds)
+        {
+            if (!Refresh.HasDelegate)
+                return;
+            await Refresh.InvokeAsync();
+        }
+
+        if (visible == "visible")
+        {
+            visible = string.Empty;
+        }
+    }
+}

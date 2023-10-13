@@ -12,9 +12,31 @@
     Welcome to your new app.
 
     <SurveyPrompt Title="How is Blazor working for you?" />
+    @TestString
+    @TestBool
+    <BList>
+        <BListItem>
+            <BSpan>Calculation Span:</BSpan>
+            <BSelect TItem="string" @bind-Value="TestString">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </BSelect>
+        </BListItem>
+         <BListItem>
+            <BSpan>Calculate Overtime:</BSpan>
+            <BToggle @bind-Value="TestBool" />
+         </BListItem>
+    </BList>
+      
+        
+   
 </BContent>
 
 @code{
+    public string TestString = "1";
+    public bool TestBool = false;
     private void Test()
     {
         Console.WriteLine("it worked");

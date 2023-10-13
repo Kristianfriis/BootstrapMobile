@@ -1,0 +1,21 @@
+﻿<div class="form-check form-switch" style="transform: scale(1.6);">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" @bind="@Value">
+</div>
+
+@code {
+    bool switchValue = false;
+
+    [Parameter]
+    public bool Value
+    {
+        get => switchValue;
+        set
+        {
+            if (switchValue == value) return;
+            switchValue = value;
+            ValueChanged.InvokeAsync(value);
+        }
+    }
+    [Parameter]
+    public EventCallback<bool> ValueChanged { get; set; }
+}

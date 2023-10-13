@@ -1,0 +1,8 @@
+﻿<li class="list-group-item d-flex justify-content-between">
+    @ChildContent
+</li>
+
+@code {
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+}

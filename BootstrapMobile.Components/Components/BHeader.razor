@@ -1,12 +1,21 @@
 ﻿@inject MobileBootstrapInterop HistoryInterop
 <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
-        <BIconButton Icon="oi oi-chevron-left" OnClick="Back" Visible="BackButton"></BIconButton>
+        @if (BackButton)
+        {
+            <BIconButton Icon="oi oi-chevron-left" OnClick="Back" Visible="BackButton"></BIconButton>
+        }
 
         @if(!BackButton && BApp!.Hamburger)
         {
             <BIconButton Icon="oi oi-menu" Size="fs-4" data-bs-toggle="offcanvas" data-bs-target="@Constants.OffCanvasTarget" aria-controls="offcanvasExample" />
         }
+
+        @if (!BackButton && !BApp!.Hamburger)
+        {
+            <BIconButton Icon="oi oi-chevron-left" OnClick="Back" Visible="false"></BIconButton>
+        }
+
 
          <!-- Navbar Brand -->
              <span class="navbar-brand">
