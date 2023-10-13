@@ -1,0 +1,22 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+<BHeader Title="Index">
+    <HeaderIcon>
+        <BIconButton Icon="oi oi-cog" OnClick="Test"></BIconButton>
+    </HeaderIcon>
+</BHeader>
+<BContent Padding="true">
+    <h1>Hello, world!</h1>
+
+    Welcome to your new app.
+
+    <SurveyPrompt Title="How is Blazor working for you?" />
+</BContent>
+
+@code{
+    private void Test()
+    {
+        Console.WriteLine("it worked");
+    }
+}

@@ -1,0 +1,29 @@
+div {
+    position: absolute;
+    width: 100%;
+}
+.safepadding {
+    padding-top: var(--ion-padding);
+    padding-bottom: var(--ion-padding);
+    padding-left: var(--ion-padding);
+    padding-right: var(--ion-padding);
+}
+
+.content {
+    height: 100%;
+    overflow: auto;
+}
+
+.footer_present {
+    padding-bottom: 0;
+}
+
+.header_present {
+    top: var(--min-height);
+    padding-bottom: 0;
+}
+.header_and_header_present {
+    top: var(--min-height);
+    bottom: var(--min-height);
+    padding-bottom: 0;
+}

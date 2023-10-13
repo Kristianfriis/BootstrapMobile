@@ -1,0 +1,22 @@
+﻿<main id="main_app" class="@GetClass()">
+    <CascadingValue Value="this">
+        @ChildContent
+    </CascadingValue>
+</main>
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public bool FooterNav { get; set; }
+    public bool Tabbar { get; set; }
+    public bool Header { get; set; }
+    public bool Hamburger { get; set; }
+
+    private string GetClass()
+    {
+        var className = "";
+        if (FooterNav)
+            className = className + "footer";
+
+        return className;
+    }
+}

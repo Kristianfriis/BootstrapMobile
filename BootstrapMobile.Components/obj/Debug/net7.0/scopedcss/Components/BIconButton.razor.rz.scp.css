@@ -1,0 +1,15 @@
+.navbar-toggler:focus[b-79x8qe5hiw],
+.navbar-toggler:active[b-79x8qe5hiw],
+.navbar-toggler-icon:focus[b-79x8qe5hiw] {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler:not(:active)[b-79x8qe5hiw] {
+    /* now keep red background for 1s */
+    transition: background-color ease-in 0.15s;
+}
+
+.navbar-toggler:active[b-79x8qe5hiw] {
+    background: var(--bs-gray-200);
+}

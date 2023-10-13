@@ -1,0 +1,62 @@
+﻿@inject MobileBootstrapInterop HistoryInterop
+<nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        @if (BackButton)
+        {
+            <!-- Back Arrow -->
+            <a class="nav-link text-body">
+                <i class="@CreateClass()" aria-hidden="true" @onclick="Back"></i>
+            </a>
+        }
+
+        @if(!BackButton && BApp!.Hamburger)
+        {
+            <BIconButton Icon="oi oi-menu" Size="fs-4" data-bs-toggle="offcanvas" data-bs-target="@Constants.OffCanvasTarget" aria-controls="offcanvasExample" />
+        }
+
+         <!-- Navbar Brand -->
+             <span class="navbar-brand">
+                 @Title
+             </span>
+
+         <!-- Icon Button -->
+            @if(HeaderIcon == null)
+            {
+            <a class="nav-link text-body">
+                <i class="oi oi-cog fs-4 invisible align-middle" aria-hidden="true"></i>
+            </a>
+            }else
+            {
+            @HeaderIcon
+            }
+        </div>
+  </nav>
+
+@code {
+    [Parameter] public RenderFragment? HeaderIcon { get; set; }
+    [Parameter] public string Title { get; set; } = string.Empty;
+    [Parameter] public bool BackButton { get; set; }
+    [CascadingParameter]
+    public BApp? BApp { get; set; }
+
+    protected override void OnInitialized()
+    {
+        if (BApp != null)
+            BApp.Header = true;
+    }
+
+    private async Task Back()
+    {
+        await HistoryInterop.GoBack();
+    }
+
+    private string CreateClass()
+    {
+        var className = "oi oi-chevron-left fs-4 invisible align-middle";
+
+        if (BackButton)
+            className = "oi oi-chevron-left fs-4 align-middle";
+
+        return className;
+    }
+}

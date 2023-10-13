@@ -1,0 +1,21 @@
+﻿<button class="navbar-toggler nav-link text-body border-0" type="button" @onclick="InvokeParentMethod" @attributes=AllOtherAttributes>
+    <span class="@Icon @Size align-middle" aria-hidden="true"></span>
+</button>
+
+@code {
+    [Parameter] public string Icon { get; set; } = string.Empty;
+    [Parameter] public string Size { get; set; } = "fs-4";
+    [Parameter] public EventCallback OnClick { get; set; }
+
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object> AllOtherAttributes { get; set; }
+
+    bool hasDelegate => OnClick.HasDelegate;
+
+    private async void InvokeParentMethod()
+    {
+        if (!OnClick.HasDelegate)
+            return;
+        await OnClick.InvokeAsync();
+    }
+}

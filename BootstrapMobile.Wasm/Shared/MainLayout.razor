@@ -1,0 +1,18 @@
+﻿@inherits LayoutComponentBase
+
+<BApp>
+    <BOffCanvas Title="Bootstrap Mobile">
+        <BOffCanvasItem Href="/" Name="Home"/>
+        <BOffCanvasItem Href="/fetchdata" Name="Fetch Data" />
+        <BOffCanvasItem Href="/counter" Name="Counter" />
+    </BOffCanvas>
+    @Body
+
+    <BFooter>
+        <BTabbar>
+            <BTab Href="" MatchAll="true" Name="Home" Icon="oi oi-home"></BTab>
+            <BTab Href="fetchdata" Name="Fetchdata" Icon="oi oi-list-rich"></BTab>
+            <BTab Href="counter" Name="Counter" Icon="oi oi-plus"></BTab>
+        </BTabbar>
+    </BFooter>
+</BApp>

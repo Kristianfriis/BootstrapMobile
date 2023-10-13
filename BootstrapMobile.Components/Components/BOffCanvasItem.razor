@@ -1,0 +1,15 @@
+﻿@inject MobileBootstrapInterop JsInterop
+
+<a href="@Href" class="list-group-item list-group-item-action" @onclick="ItemClick">@Name</a>
+
+@code {
+    [Parameter] public string Href { get; set; } = string.Empty;
+    [Parameter] public string Name { get; set; } = string.Empty;
+    [CascadingParameter] internal BOffCanvas? bOffCanvas { get; set; }
+
+    private async Task ItemClick()
+    {
+        if (bOffCanvas != null && bOffCanvas.OffCanvasRef != null)
+            await JsInterop.ToogleOffCanvas(bOffCanvas.OffCanvasRef.Value);
+    }
+}

@@ -1,0 +1,11 @@
+nav {
+    height: 7vh;
+    --nav-height: 7vh; /*7vh but 0 hero*/
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}

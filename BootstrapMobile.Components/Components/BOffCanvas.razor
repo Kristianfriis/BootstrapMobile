@@ -1,0 +1,26 @@
+﻿<CascadingValue Value="this">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="@Constants.OffCanvasId" aria-labelledby="offcanvasExampleLabel" @ref="OffCanvasRef">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">@Title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-group list-group-flush">
+                @ChildContent
+            </ul>
+        </div>
+    </div>
+</CascadingValue>
+
+@code {
+    [CascadingParameter] public BApp? BApp { get; set; }
+    internal ElementReference? OffCanvasRef;
+    [Parameter] public string Title { get; set; } = string.Empty;
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+
+    protected override void OnInitialized()
+    {
+        if (BApp != null)
+            BApp.Hamburger = true;
+    }
+}

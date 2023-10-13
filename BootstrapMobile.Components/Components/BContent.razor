@@ -1,0 +1,38 @@
+﻿@using System.Text;
+<div class="@GetContentClass()" style="@GetStyles()">
+    @ChildContent
+</div>
+
+@code {
+    [Parameter] public bool Padding { get; set; }
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [CascadingParameter]
+    public BApp? BApp { get; set; }
+
+    private string GetStyles()
+    {
+        var height = 100;
+        if (BApp != null)
+        {
+            if (BApp.Tabbar)
+                height = height - 7;
+            if (BApp.Header)
+                height = height - 10;
+        }
+
+        return $"height: {height}vh;";
+    }
+
+    private string GetContentClass()
+    {
+        var result = new StringBuilder("content");
+
+        if (Padding)
+            result = result.Append(" safepadding");
+
+        if (BApp != null && BApp.Tabbar)
+            result = result.Append(" footer_present");
+
+        return result.ToString();
+    }
+}

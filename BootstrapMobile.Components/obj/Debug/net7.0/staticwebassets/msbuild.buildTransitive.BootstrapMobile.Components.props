@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\BootstrapMobile.Components.props" />
+</Project>

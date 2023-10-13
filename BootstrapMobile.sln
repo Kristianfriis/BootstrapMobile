@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootstrapMobile.Wasm", "BootstrapMobile.Wasm\BootstrapMobile.Wasm.csproj", "{41E102E9-A79D-444E-BA1D-279F88D5F305}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BootstrapMobile.Components", "BootstrapMobile.Components\BootstrapMobile.Components.csproj", "{0AD745EE-4BB2-4A59-AA77-264330B19C4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41E102E9-A79D-444E-BA1D-279F88D5F305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41E102E9-A79D-444E-BA1D-279F88D5F305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41E102E9-A79D-444E-BA1D-279F88D5F305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41E102E9-A79D-444E-BA1D-279F88D5F305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AD745EE-4BB2-4A59-AA77-264330B19C4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AD745EE-4BB2-4A59-AA77-264330B19C4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AD745EE-4BB2-4A59-AA77-264330B19C4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AD745EE-4BB2-4A59-AA77-264330B19C4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16F2AA24-4399-4734-B9D0-6D58E5995D3E}
+	EndGlobalSection
+EndGlobal
