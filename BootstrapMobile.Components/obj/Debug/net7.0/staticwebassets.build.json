@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nFcknl8kQERx4lebOqp/sbfVOmuxC/5Rq3bGEdy3MzY=",
+  "Hash": "deMhUAhr2zI2b2zP2n65lBGiAsn72PlhYTW4bUVSDP8=",
   "Source": "BootstrapMobile.Components",
   "BasePath": "_content/BootstrapMobile.Components",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "BootstrapMobile.Components\\wwwroot",
       "Source": "BootstrapMobile.Components",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BootstrapMobile.Components.styles.css",
+      "Identity": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BootstrapMobile.Components.styles.css",
       "SourceId": "BootstrapMobile.Components",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "RelativePath": "BootstrapMobile.Components.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BootstrapMobile.Components.styles.css"
+      "OriginalItemSpec": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BootstrapMobile.Components.styles.css"
     },
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BootstrapMobile.Components.bundle.scp.css",
+      "Identity": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BootstrapMobile.Components.bundle.scp.css",
       "SourceId": "BootstrapMobile.Components",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "RelativePath": "BootstrapMobile.Components.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BootstrapMobile.Components.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\BootstrapMobile.Components.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\app.css",
+      "Identity": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\app.css",
       "SourceId": "BootstrapMobile.Components",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "RelativePath": "css/app.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\bootstrap\\bootstrap.bundle.min.js",
+      "Identity": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\bootstrap\\bootstrap.bundle.min.js",
       "SourceId": "BootstrapMobile.Components",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "RelativePath": "css/bootstrap/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "BootstrapMobile.Components",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "BootstrapMobile.Components",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "BootstrapMobile.Components",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "BootstrapMobile.Components",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "BootstrapMobile.Components",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "BootstrapMobile.Components",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "BootstrapMobile.Components",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "BootstrapMobile.Components",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "BootstrapMobile.Components",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "BootstrapMobile.Components",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "BootstrapMobile.Components",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\exampleJsInterop.js",
+      "Identity": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\exampleJsInterop.js",
       "SourceId": "BootstrapMobile.Components",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "ContentRoot": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
       "BasePath": "_content/BootstrapMobile.Components",
       "RelativePath": "exampleJsInterop.js",
       "AssetKind": "All",

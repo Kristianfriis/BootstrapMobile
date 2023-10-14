@@ -1,51 +1,51 @@
 {
   "Files": [
     {
-      "Id": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\obj\\Debug\\net7.0\\build-gz\\P6kR6NXu.gz",
+      "Id": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Wasm\\obj\\Debug\\net7.0\\build-gz\\H++IVqX6.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BootstrapMobile.Wasm.styles.css",
+      "Id": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Wasm\\obj\\Debug\\net7.0\\scopedcss\\bundle\\BootstrapMobile.Wasm.styles.css",
       "PackagePath": "staticwebassets\\BootstrapMobile.Wasm.styles.css"
     },
     {
-      "Id": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\obj\\Debug\\net7.0\\service-worker-assets.js",
+      "Id": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Wasm\\obj\\Debug\\net7.0\\service-worker-assets.js",
       "PackagePath": "staticwebassets\\service-worker-assets.js"
     },
     {
-      "Id": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\obj\\Debug\\net7.0\\service-worker\\service-worker.published.js",
+      "Id": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Wasm\\obj\\Debug\\net7.0\\service-worker\\service-worker.published.js",
       "PackagePath": "staticwebassets\\service-worker.js"
     },
     {
-      "Id": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\wwwroot\\css\\app.css",
+      "Id": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Wasm\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\wwwroot\\favicon.png",
+      "Id": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Wasm\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\wwwroot\\icon-192.png",
+      "Id": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Wasm\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\wwwroot\\icon-512.png",
+      "Id": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Wasm\\wwwroot\\icon-512.png",
       "PackagePath": "staticwebassets\\icon-512.png"
     },
     {
-      "Id": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\wwwroot\\index.html",
+      "Id": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Wasm\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\wwwroot\\manifest.json",
+      "Id": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Wasm\\wwwroot\\manifest.json",
       "PackagePath": "staticwebassets\\manifest.json"
     },
     {
-      "Id": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\wwwroot\\sample-data\\weather.json",
+      "Id": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Wasm\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {
