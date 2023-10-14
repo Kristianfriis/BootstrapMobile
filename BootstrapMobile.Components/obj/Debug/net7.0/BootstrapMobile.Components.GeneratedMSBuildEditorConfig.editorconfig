@@ -9,81 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows,browser
 build_property.RootNamespace = BootstrapMobile.Components
 build_property.RootNamespace = BootstrapMobile.Components
-build_property.ProjectDir = C:\Playground\BootstrapMobile\BootstrapMobile.Components\
+build_property.ProjectDir = D:\Projects\BootstrapMobile\BootstrapMobile.Components\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Playground\BootstrapMobile\BootstrapMobile.Components
+build_property.MSBuildProjectDirectory = D:\Projects\BootstrapMobile\BootstrapMobile.Components
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BList.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BList.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BListItem.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BListItem.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCTGlzdEl0ZW0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BOffCanvas.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BOffCanvas.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCT2ZmQ2FudmFzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BOffCanvasItem.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BOffCanvasItem.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCT2ZmQ2FudmFzSXRlbS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BSelect.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BSelect.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCU2VsZWN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BSpan.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BSpan.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCU3Bhbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BToolbar.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BToolbar.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCVG9vbGJhci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/_Imports.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BApp.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BApp.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCQXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-y5a047f30y
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BContent.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BContent.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCQ29udGVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-0tikhr1cun
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BFooter.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BFooter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCRm9vdGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-oh00j673tt
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BHeader.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BHeader.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCSGVhZGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-7647d4ez0x
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BIconButton.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BIconButton.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCSWNvbkJ1dHRvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-79x8qe5hiw
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BOverlay.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BOverlay.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCT3ZlcmxheS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-ojenhq1udm
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BPullToRefresh.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BPullToRefresh.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCUHVsbFRvUmVmcmVzaC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-yhj7ybt2hr
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BTab.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BTab.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCVGFiLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-91ae245q4l
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BTabbar.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BTabbar.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCVGFiYmFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-lvdkavxkbh
 
-[C:/Playground/BootstrapMobile/BootstrapMobile.Components/Components/BToggle.razor]
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BToggle.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCVG9nZ2xlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-tvh693croa
