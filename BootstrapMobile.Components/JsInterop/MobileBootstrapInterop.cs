@@ -25,6 +25,13 @@ public class MobileBootstrapInterop : IAsyncDisposable
         await module.InvokeVoidAsync("toggleOffCanvas", element);
     }
 
+    public async Task SetThemeColor(string color)
+    {
+        var module = await moduleTask.Value;
+        await module.InvokeVoidAsync("setThemeColor", color);
+    }
+
+
     public async ValueTask DisposeAsync()
     {
         if (moduleTask.IsValueCreated)

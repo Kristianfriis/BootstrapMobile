@@ -14,3 +14,7 @@ export function toggleOffCanvas(el) {
 
     myOffcanvas.toggle();
 }
+
+export function setThemeColor(color) {
+    document.querySelector("meta[name='theme-color']").content = color;
+}
