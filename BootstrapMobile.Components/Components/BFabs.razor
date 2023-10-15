@@ -1,0 +1,13 @@
+﻿<div class="fab-container">
+    <div class="fab shadow">
+        <div class="fab-content">
+            <span class="@Icon" aria-hidden="true"></span>
+        </div>
+    </div>
+    @ChildContent
+</div>
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public string Icon { get; set; } = string.Empty;
+}

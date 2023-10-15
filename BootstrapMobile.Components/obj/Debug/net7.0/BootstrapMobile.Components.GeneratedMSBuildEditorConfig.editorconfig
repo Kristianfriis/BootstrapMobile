@@ -28,6 +28,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCRGl2aWRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BFab.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCRmFiLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BFabs.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCRmFicy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BList.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

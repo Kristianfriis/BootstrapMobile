@@ -825,11 +825,11 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-13kVYblArg9\/DDuB3urby0tnJGR+Z280I0zSkvnerow=",
+      "hash": "sha256-0GiHX9JClsyuRoR\/JcuDAj3mGime3SYH6Wyq42dcMP4=",
       "url": "_framework\/BootstrapMobile.Components.dll"
     },
     {
-      "hash": "sha256-GpB190sdaDSYLZMJ3fiaZsJ6PvICAyz36ufT\/tYpJ3U=",
+      "hash": "sha256-KjOWafYK03NfuZ4oHx1tLxhWFkHtvjVkEs4qpAwY+LM=",
       "url": "_framework\/BootstrapMobile.Components.pdb"
     },
     {
@@ -845,15 +845,15 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-dveGJFDuaTET+81ogOevaqAgphVlojIpMfRYqb7e0s4=",
+      "hash": "sha256-4e1N3vLy+lP2xtFKiVmV8AyQMfqdEfgNhbfvrpiDmIE=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-VzDvGzoKN9b3ELveBFutk3p3\/fgdScAt1Zm6m1GU45E=",
+      "hash": "sha256-XJf4gH6nlZ8Y0S6bne0NAGcu7v7hbJjK1Plf0sm0TTc=",
       "url": "_content\/BootstrapMobile.Components\/BootstrapMobile.Components.bundle.scp.css"
     },
     {
-      "hash": "sha256-oPz0cdQQuwYt6o0P3oy20hxbAsvRPDyio\/Vnj++Aqmo=",
+      "hash": "sha256-XB5C\/yMFUIzYbIIRtNZQyFdltTYlYgepO9dsPAxcGZY=",
       "url": "_content\/BootstrapMobile.Components\/css\/app.css"
     },
     {
@@ -909,5 +909,5 @@
       "url": "_content\/BootstrapMobile.Components\/exampleJsInterop.js"
     }
   ],
-  "version": "mQWs0OwI"
+  "version": "223SqXZI"
 };

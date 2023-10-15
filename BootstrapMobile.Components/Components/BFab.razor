@@ -1,0 +1,19 @@
+﻿<div class="sub-button shadow">
+    <a @onclick="InvokeParentMethod">
+        <span class="@Icon"></span>
+    </a>
+</div>
+
+@code {
+    [Parameter] public EventCallback OnClick { get; set; }
+    [Parameter] public string Icon { get; set; } = string.Empty;
+
+    bool hasDelegate => OnClick.HasDelegate;
+
+    private async void InvokeParentMethod()
+    {
+        if (!OnClick.HasDelegate)
+            return;
+        await OnClick.InvokeAsync();
+    }
+}
