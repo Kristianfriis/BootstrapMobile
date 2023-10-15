@@ -1,0 +1,4 @@
+.accordion-body {
+    --bs-accordion-body-padding-x: .25rem;
+    --bs-accordion-body-padding-y: .25rem;
+}

@@ -1,4 +1,4 @@
-﻿<div class="accordion" id="@AccordionId">
+﻿<div class="accordion  @(Flush ? "accordion-flush" : "")" id="@AccordionId">
     <CascadingValue Value="this">
         @ChildContent
     </CascadingValue>
@@ -7,4 +7,5 @@
 @code {
     [Parameter] public RenderFragment? ChildContent { get; set; }
     [Parameter] public string AccordionId { get; set; } = string.Empty;
+    [Parameter] public bool Flush { get; set; }
 }
