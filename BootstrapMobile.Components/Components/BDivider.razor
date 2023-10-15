@@ -1,0 +1,13 @@
+﻿@if (Line)
+{
+    <hr class="p-@Size" />
+} else
+{
+    <div class="p-@Size"></div>
+}
+
+
+@code {
+    [Parameter] public bool Line { get; set; }
+    [Parameter] public string Size { get; set; } = "1";
+}

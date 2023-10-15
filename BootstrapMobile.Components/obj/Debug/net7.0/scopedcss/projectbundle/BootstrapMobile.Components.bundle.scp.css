@@ -1,3 +1,8 @@
+/* _content/BootstrapMobile.Components/Components/BAccordionItem.razor.rz.scp.css */
+.accordion-body[b-t2dz54w22v] {
+    --bs-accordion-body-padding-x: .25rem;
+    --bs-accordion-body-padding-y: .25rem;
+}
 /* _content/BootstrapMobile.Components/Components/BApp.razor.rz.scp.css */
 #main_app[b-y5a047f30y] {
     max-width: 100vw;
