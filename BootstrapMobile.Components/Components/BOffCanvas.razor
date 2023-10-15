@@ -8,6 +8,9 @@
             <ul class="list-group list-group-flush">
                 @ChildContent
             </ul>
+            <footer class="fixed-bottom p-2">
+                @Bottom
+            </footer>
         </div>
     </div>
 </CascadingValue>
@@ -17,6 +20,7 @@
     internal ElementReference? OffCanvasRef;
     [Parameter] public string Title { get; set; } = string.Empty;
     [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public RenderFragment? Bottom { get; set; }
 
     protected override void OnInitialized()
     {

@@ -2,9 +2,15 @@
 
 <BApp>
     <BOffCanvas Title="Bootstrap Mobile">
-        <BOffCanvasItem Href="/" Name="Home" Icon="oi oi-home" />
-        <BOffCanvasItem Href="/fetchdata" Name="Fetch Data" Icon="oi oi-list-rich" />
-        <BOffCanvasItem Href="/counter" Name="Counter" Icon="oi oi-plus" />
+        <ChildContent>
+            <BOffCanvasItem Href="/" Name="Home" Icon="oi oi-home" />
+            <BOffCanvasItem Href="/fetchdata" Name="Fetch Data" Icon="oi oi-list-rich" />
+            <BOffCanvasItem Href="/counter" Name="Counter" Icon="oi oi-plus" />
+        </ChildContent>
+
+        <Bottom>
+            <span>Version in bottom</span>
+        </Bottom>
     </BOffCanvas>
 
     @Body
