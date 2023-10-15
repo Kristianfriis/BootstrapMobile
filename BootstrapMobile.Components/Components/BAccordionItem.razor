@@ -1,0 +1,28 @@
+﻿<div class="accordion-item">
+    <h2 class="accordion-header" id="heading@(Id)">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse@(Id)" aria-expanded="true" aria-controls="collapse@(Id)">
+            @Header
+        </button>
+    </h2>
+    <div id="collapse@(Id)" class="accordion-collapse collapse @(Show ? "show" : "")" aria-labelledby="heading@(Id)" data-bs-parent="#@Parent!.AccordionId">
+        <div class="accordion-body">
+            @Content
+        </div>
+    </div>
+</div>
+
+@code {
+    [CascadingParameter] public BAccordion? Parent { get; set; }
+    [Parameter] public RenderFragment? Content { get; set; }
+    [Parameter] public RenderFragment? Header { get; set; }
+    [Parameter] public bool Show { get; set; }
+    private int Id;
+
+    protected override void OnInitialized()
+    {
+        if (Parent == null)
+            throw new NullReferenceException("BAccordion has to be within a BAccordion component");
+
+        Id = Random.Shared.Next(10000, 99999);
+    }
+}

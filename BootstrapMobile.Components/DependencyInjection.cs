@@ -1,4 +1,4 @@
-﻿using BootstrapMobile.Components.JsInterop;
+﻿using BootstrapMobile.JsInterop;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace BootstrapMobile.Components;

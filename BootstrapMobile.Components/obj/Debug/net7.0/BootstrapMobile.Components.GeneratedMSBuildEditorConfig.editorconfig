@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\Projects\BootstrapMobile\BootstrapMobile.Components
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BAccordion.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCQWNjb3JkaW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BAccordionItem.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCQWNjb3JkaW9uSXRlbS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Projects/BootstrapMobile/BootstrapMobile.Components/Components/BButton.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCQnV0dG9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

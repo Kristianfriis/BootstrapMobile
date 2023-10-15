@@ -1,0 +1,10 @@
+﻿<div class="accordion" id="@AccordionId">
+    <CascadingValue Value="this">
+        @ChildContent
+    </CascadingValue>
+</div>
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public string AccordionId { get; set; } = string.Empty;
+}

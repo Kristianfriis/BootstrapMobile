@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
-namespace BootstrapMobile.Components.JsInterop;
+namespace BootstrapMobile.JsInterop;
 
 public class MobileBootstrapInterop : IAsyncDisposable
 {
