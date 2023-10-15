@@ -1,5 +1,5 @@
 ﻿@page "/"
-
+@inject BToastService toastService
 <PageTitle>Index</PageTitle>
 <BHeader Title="Index">
     <HeaderIcon>
@@ -30,8 +30,8 @@
          </BListItem>
     </BList>
       
-        
-   
+    <BButton OnClick="ShowToast">Show Toast</BButton>
+    <BButton OnClick="ShowToastError">Show Error Toast</BButton>
 </BContent>
 
 @code{
@@ -40,5 +40,14 @@
     private void Test()
     {
         Console.WriteLine("it worked");
+    }
+
+    private void ShowToast()
+    {
+        toastService.ShowToast("I'm a SUCCESS message", ToastLevel.Success, 1000);
+    }
+    private void ShowToastError()
+    {
+        toastService.ShowToast("I'm a Error message", ToastLevel.Error);
     }
 }

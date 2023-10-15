@@ -9,7 +9,7 @@
     [Parameter] public EventCallback OnClick { get; set; }
 
     [Parameter(CaptureUnmatchedValues = true)]
-    public Dictionary<string, object> AllOtherAttributes { get; set; }
+    public Dictionary<string, object>? AllOtherAttributes { get; set; }
 
     bool hasDelegate => OnClick.HasDelegate;
 

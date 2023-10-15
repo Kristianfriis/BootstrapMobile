@@ -133,6 +133,11 @@ div[b-lvdkavxkbh] {
 ul[b-lvdkavxkbh] {
     width: 100%;
 }
+/* _content/BootstrapMobile.Components/Components/BToast.razor.rz.scp.css */
+.visible[b-d2q1xbsjvx]
+{
+    display: block;
+}
 /* _content/BootstrapMobile.Components/Components/BToggle.razor.rz.scp.css */
 .form-switch.form-switch-md .form-check-input[b-tvh693croa] {
     height: 1.5rem;

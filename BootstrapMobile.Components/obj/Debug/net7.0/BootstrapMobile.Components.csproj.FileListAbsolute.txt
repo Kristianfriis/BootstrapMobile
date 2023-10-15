@@ -30,3 +30,4 @@ D:\Projects\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\Bootstra
 D:\Projects\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\refint\BootstrapMobile.Components.dll
 D:\Projects\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\BootstrapMobile.Components.pdb
 D:\Projects\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\ref\BootstrapMobile.Components.dll
+D:\Projects\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\scopedcss\Components\BToast.razor.rz.scp.css
