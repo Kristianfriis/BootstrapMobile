@@ -7,6 +7,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Blazored.Modal.dll": "sha256-Sr30UiM7JErBe8hojY6HAgaOOgfQE5zHijI0uVypmkM=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-+79HPC+snrhJjzOJbwBnWtkWOY6jdopnEnle7ZiRr7Y=",
       "Microsoft.AspNetCore.Components.dll": "sha256-Ai5PTdfbdzeheOh7Ly3Uoqa3f175oOxvfu2QfxDZGso=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-IcQfwp7uOUAjEcK6s\/W097tVi886KFG0KQicOqtu2SU=",
@@ -198,18 +199,18 @@
       "mscorlib.dll": "sha256-8OmdVHzoN7xteY5ehp0L8R17I9QxFkH2lUVHFuslE0s=",
       "netstandard.dll": "sha256-urq+e2ZQXxmOWMRxTR92529HnUVu6+kyVnfF6SoLad8=",
       "System.Private.CoreLib.dll": "sha256-ixnF\/wVKLHZM1N0lfJufpZ41EC2LvvyiSqdW43h3Xew=",
-      "BootstrapMobile.Components.dll": "sha256-FWf+gRev46mcbCY7vWyuvx9ACgzJDZ\/qBb4MFi7QguA=",
-      "BootstrapMobile.Wasm.dll": "sha256-D1agDVvsYaBA7Cm0KtKpBouOPQEYx2wz\/12tf2r\/6Wg="
+      "BootstrapMobile.Components.dll": "sha256-LkBrb5RUvV1B+k0mVwrqTNas0qB6nnMynrIR6AxYdDs=",
+      "BootstrapMobile.Wasm.dll": "sha256-RxOOkUEg7TSTMmYZhupyIpCkFTrKk\/HtRgqDNh3SDR4="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "BootstrapMobile.Components.pdb": "sha256-F4TAPntNRmiKuiclTQxT9ddIu8cC5HFTiThujtjLX8k=",
-      "BootstrapMobile.Wasm.pdb": "sha256-KTB6HsH1ZuVajm7wTFgb1EvBl6Dsz3d2D6Mzl4PUOas="
+      "BootstrapMobile.Components.pdb": "sha256-FN\/Bx6vNY3lKbP2pUWixnFA\/uIFQYW44qo254YBVifg=",
+      "BootstrapMobile.Wasm.pdb": "sha256-h7v3WC1X4ftj4CUcszltyi2vOjsyq8dKpIeVUVohPu8="
     },
     "runtime": {
-      "dotnet.7.0.12.uriyzgwesm.js": "sha256-cPJgWy8SjMaYFeimGkYy23ls+rDZVmoC\/eMoHpqRc+4=",
+      "dotnet.7.0.12.kuaok8eruw.js": "sha256-cPJgWy8SjMaYFeimGkYy23ls+rDZVmoC\/eMoHpqRc+4=",
       "dotnet.timezones.blat": "sha256-O421u5MzVtmNN7GY9RXR9Ib1uPK4hQfPpzOVofr7iNU=",
       "dotnet.wasm": "sha256-vwAkMgGGA\/XIQDk2s\/UjKb+fTk9xcKpa9qhvMBqj8hA=",
       "icudt.dat": "sha256-tO5O5YzMTVSaKBboxAqezOQL9ewmupzV2JrB5Rkc8a4=",

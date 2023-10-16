@@ -65,19 +65,26 @@
             </Content>
         </BAccordionItem>
     </BAccordion>
+    
+    <BDivider Size="2" />
+    <BButton OnClick="ShowModal">Show Offcanvas Modal</BButton>
 
-         <BFabs Icon="oi oi-plus">
-         <BFab Icon="oi oi-phone"/>
-            <BFab Icon="oi account-login" />
-     </BFabs>
+    <BModal @ref="modalReference"/>
 </BContent>
 
 @code{
     public string TestString = "1";
     public bool TestBool = false;
+    BModal? modalReference;
     private void Test()
     {
         Console.WriteLine("it worked");
+    }
+
+    async Task ShowModal()
+    {
+        if (modalReference != null)
+            await modalReference.Toggle();
     }
 
     private void ShowToast()

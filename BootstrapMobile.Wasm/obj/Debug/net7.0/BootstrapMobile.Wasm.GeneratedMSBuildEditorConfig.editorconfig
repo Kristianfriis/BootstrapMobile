@@ -9,37 +9,37 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = BootstrapMobile.Wasm
 build_property.RootNamespace = BootstrapMobile.Wasm
-build_property.ProjectDir = D:\Projects\BootstrapMobile\BootstrapMobile.Wasm\
+build_property.ProjectDir = C:\Playground\BootstrapMobile\BootstrapMobile.Wasm\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Projects\BootstrapMobile\BootstrapMobile.Wasm
+build_property.MSBuildProjectDirectory = C:\Playground\BootstrapMobile\BootstrapMobile.Wasm
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Projects/BootstrapMobile/BootstrapMobile.Wasm/App.razor]
+[C:/Playground/BootstrapMobile/BootstrapMobile.Wasm/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/BootstrapMobile/BootstrapMobile.Wasm/Pages/Counter.razor]
+[C:/Playground/BootstrapMobile/BootstrapMobile.Wasm/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/BootstrapMobile/BootstrapMobile.Wasm/Pages/FetchData.razor]
+[C:/Playground/BootstrapMobile/BootstrapMobile.Wasm/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/BootstrapMobile/BootstrapMobile.Wasm/Pages/Index.razor]
+[C:/Playground/BootstrapMobile/BootstrapMobile.Wasm/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/BootstrapMobile/BootstrapMobile.Wasm/Shared/SurveyPrompt.razor]
+[C:/Playground/BootstrapMobile/BootstrapMobile.Wasm/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/BootstrapMobile/BootstrapMobile.Wasm/_Imports.razor]
+[C:/Playground/BootstrapMobile/BootstrapMobile.Wasm/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/BootstrapMobile/BootstrapMobile.Wasm/Shared/MainLayout.razor]
+[C:/Playground/BootstrapMobile/BootstrapMobile.Wasm/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-0nrynudtml
