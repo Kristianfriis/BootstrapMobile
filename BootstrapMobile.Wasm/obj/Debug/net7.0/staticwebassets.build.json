@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YrR7R51qtyxeRUQnv4uE2LQJONQ2k9lAVHlnOS+MreE=",
+  "Hash": "NeknFyByq1/sTRItXEnJMjrMJ6M5Z5yyAc/00G4SzEw=",
   "Source": "BootstrapMobile.Wasm",
   "BasePath": "/",
   "Mode": "Root",
@@ -291,6 +291,23 @@
       "OriginalItemSpec": "wwwroot\\exampleJsInterop.js"
     },
     {
+      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\interop.js",
+      "SourceId": "BootstrapMobile.Components",
+      "SourceType": "Project",
+      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "BasePath": "_content/BootstrapMobile.Components",
+      "RelativePath": "interop.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\interop.js"
+    },
+    {
       "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\blazor.boot.json",
       "SourceId": "BootstrapMobile.Wasm",
       "SourceType": "Computed",
@@ -323,23 +340,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\kf\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\7.0.11\\build\\net7.0\\blazor.webassembly.js"
-    },
-    {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.Modal.dll",
-      "SourceId": "BootstrapMobile.Wasm",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Blazored.Modal.dll",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "BlazorWebAssemblyResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\kf\\.nuget\\packages\\blazored.modal\\7.1.0\\lib\\net6.0\\Blazored.Modal.dll"
     },
     {
       "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\BootstrapMobile.Components.dll",
@@ -6360,23 +6360,6 @@
       "OriginalItemSpec": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\System.Xml.ReaderWriter.dll"
     },
     {
-      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\obj\\Debug\\net7.0\\build-gz\\QZmfMhIp.gz",
-      "SourceId": "BootstrapMobile.Wasm",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\bin\\Debug\\net7.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Blazored.Modal.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.Modal.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\bin\\Debug\\net7.0\\wwwroot\\_framework\\Blazored.Modal.dll"
-    },
-    {
       "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\obj\\Debug\\net7.0\\build-gz\\RBV399EB.gz",
       "SourceId": "BootstrapMobile.Wasm",
       "SourceType": "Computed",
@@ -7463,40 +7446,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\sample-data\\weather.json"
-    },
-    {
-      "Identity": "C:\\Users\\kf\\.nuget\\packages\\blazored.modal\\7.1.0\\staticwebassets\\Blazored.Modal.bundle.scp.css",
-      "SourceId": "Blazored.Modal",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\kf\\.nuget\\packages\\blazored.modal\\7.1.0\\staticwebassets\\",
-      "BasePath": "_content/Blazored.Modal",
-      "RelativePath": "Blazored.Modal.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\kf\\.nuget\\packages\\blazored.modal\\7.1.0\\staticwebassets\\Blazored.Modal.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\kf\\.nuget\\packages\\blazored.modal\\7.1.0\\staticwebassets\\BlazoredModal.razor.js",
-      "SourceId": "Blazored.Modal",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\kf\\.nuget\\packages\\blazored.modal\\7.1.0\\staticwebassets\\",
-      "BasePath": "_content/Blazored.Modal",
-      "RelativePath": "BlazoredModal.razor.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\kf\\.nuget\\packages\\blazored.modal\\7.1.0\\staticwebassets\\BlazoredModal.razor.js"
     }
   ]
 }

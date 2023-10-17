@@ -80,6 +80,11 @@ nav[b-7647d4ez0x] {
 .navbar-toggler:active[b-79x8qe5hiw] {
     background: var(--bs-gray-200);
 }
+/* _content/BootstrapMobile.Components/Components/BModal.razor.rz.scp.css */
+.fullscreen[b-pry4r3xlq0]{
+    width: 100%;
+    height: 100%;
+}
 /* _content/BootstrapMobile.Components/Components/BOverlay.razor.rz.scp.css */
 .overlay[b-ojenhq1udm] {
     width: 100vw;

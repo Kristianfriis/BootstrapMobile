@@ -61,6 +61,10 @@
       "PackagePath": "staticwebassets\\exampleJsInterop.js"
     },
     {
+      "Id": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\interop.js",
+      "PackagePath": "staticwebassets\\interop.js"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BootstrapMobile.Components.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

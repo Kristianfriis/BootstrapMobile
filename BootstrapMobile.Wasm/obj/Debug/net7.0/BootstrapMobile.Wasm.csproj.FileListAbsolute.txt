@@ -1678,7 +1678,3 @@ D:\Projects\BootstrapMobile\BootstrapMobile.Wasm\obj\Debug\net7.0\BootstrapMobil
 D:\Projects\BootstrapMobile\BootstrapMobile.Wasm\obj\Debug\net7.0\refint\BootstrapMobile.Wasm.dll
 D:\Projects\BootstrapMobile\BootstrapMobile.Wasm\obj\Debug\net7.0\BootstrapMobile.Wasm.pdb
 D:\Projects\BootstrapMobile\BootstrapMobile.Wasm\obj\Debug\net7.0\ref\BootstrapMobile.Wasm.dll
-C:\Playground\BootstrapMobile\BootstrapMobile.Wasm\bin\Debug\net7.0\wwwroot\_framework\Blazored.Modal.dll
-C:\Playground\BootstrapMobile\BootstrapMobile.Wasm\bin\Debug\net7.0\wwwroot\_framework\Blazored.Modal.dll.gz
-C:\Playground\BootstrapMobile\BootstrapMobile.Wasm\bin\Debug\net7.0\Blazored.Modal.dll
-C:\Playground\BootstrapMobile\BootstrapMobile.Wasm\obj\Debug\net7.0\build-gz\QZmfMhIp.gz

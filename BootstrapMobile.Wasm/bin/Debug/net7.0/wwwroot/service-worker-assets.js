@@ -17,7 +17,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-jAi1lY9tkWk6RXVx24aF0eMY1x6U4KBkMkcCT03pvyk=",
+      "hash": "sha256-UmXCBcpYQbrhSVTh5Comvc8Ue7NGjDbqavgVWtP8kBI=",
       "url": "index.html"
     },
     {
@@ -29,12 +29,8 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-BDsEwRHGSNRHmcz9B4OpMAK5Z\/xlmNzqz4cJzBp3XUI=",
+      "hash": "sha256-t5k3MgVl8ywDEn1xtjFDNfac4oqe80dxYVS6MQYIe\/U=",
       "url": "BootstrapMobile.Wasm.styles.css"
-    },
-    {
-      "hash": "sha256-Sr30UiM7JErBe8hojY6HAgaOOgfQE5zHijI0uVypmkM=",
-      "url": "_framework\/Blazored.Modal.dll"
     },
     {
       "hash": "sha256-+79HPC+snrhJjzOJbwBnWtkWOY6jdopnEnle7ZiRr7Y=",
@@ -829,19 +825,19 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-LkBrb5RUvV1B+k0mVwrqTNas0qB6nnMynrIR6AxYdDs=",
+      "hash": "sha256-3JKMrIPnMpWOsT0HSe+lYz388G9thF9uncQ3d6l26Ng=",
       "url": "_framework\/BootstrapMobile.Components.dll"
     },
     {
-      "hash": "sha256-FN\/Bx6vNY3lKbP2pUWixnFA\/uIFQYW44qo254YBVifg=",
+      "hash": "sha256-JMm45kkMk\/VpaicjoJp\/zYutPsYtnuS+IV37olqyVuA=",
       "url": "_framework\/BootstrapMobile.Components.pdb"
     },
     {
-      "hash": "sha256-L\/4lw0Wp+wIPTmavm9uI7nxr+CNlWEV1tDYwoKtrHvE=",
+      "hash": "sha256-9b8H3BYs5tA6je3Q\/7p1OusKbgBIWPtNvKhT0MklRqU=",
       "url": "_framework\/BootstrapMobile.Wasm.dll"
     },
     {
-      "hash": "sha256-uk5AvAEg0OIwiuWv5MpOpJxu7GLiR4ykuyycsRu6+mM=",
+      "hash": "sha256-lOLS\/XCUaCLVWW3V47Ef2OWyNjddnU8dU1Jrmbx6QGg=",
       "url": "_framework\/BootstrapMobile.Wasm.pdb"
     },
     {
@@ -849,15 +845,11 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-20Cu3\/iUOsLjBdcrkn\/WEYfxyD8UYbiks6FNvS2Sp5U=",
+      "hash": "sha256-ayR4g6UZ2\/oehp1Fw63MDPTCHUTjwaaDotSX+ZFFQrE=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-JnMrV9FYOYSibA85LvQGGV3uJ7zv2njdJX1GFslt2Aw=",
-      "url": "_content\/Blazored.Modal\/BlazoredModal.razor.js"
-    },
-    {
-      "hash": "sha256-XJf4gH6nlZ8Y0S6bne0NAGcu7v7hbJjK1Plf0sm0TTc=",
+      "hash": "sha256-LR\/xbh7y\/IaZAbmzoCS4XJHcw4JfN6qG3gT+UGSepbQ=",
       "url": "_content\/BootstrapMobile.Components\/BootstrapMobile.Components.bundle.scp.css"
     },
     {
@@ -917,9 +909,9 @@
       "url": "_content\/BootstrapMobile.Components\/exampleJsInterop.js"
     },
     {
-      "hash": "sha256-NRzGRdnlAxAGthP9SY4CJqDqVewUV+0ZXzfRxXher1I=",
-      "url": "_content\/Blazored.Modal\/Blazored.Modal.bundle.scp.css"
+      "hash": "sha256-LfIunWvRh0MBLGOu7NrNRwcX\/p6dK4BWOfmCRsO2Ldg=",
+      "url": "_content\/BootstrapMobile.Components\/interop.js"
     }
   ],
-  "version": "7K9BDTjr"
+  "version": "7n6CmTBK"
 };

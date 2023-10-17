@@ -7,7 +7,6 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "Blazored.Modal.dll": "sha256-Sr30UiM7JErBe8hojY6HAgaOOgfQE5zHijI0uVypmkM=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-+79HPC+snrhJjzOJbwBnWtkWOY6jdopnEnle7ZiRr7Y=",
       "Microsoft.AspNetCore.Components.dll": "sha256-Ai5PTdfbdzeheOh7Ly3Uoqa3f175oOxvfu2QfxDZGso=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-IcQfwp7uOUAjEcK6s\/W097tVi886KFG0KQicOqtu2SU=",
@@ -199,15 +198,15 @@
       "mscorlib.dll": "sha256-8OmdVHzoN7xteY5ehp0L8R17I9QxFkH2lUVHFuslE0s=",
       "netstandard.dll": "sha256-urq+e2ZQXxmOWMRxTR92529HnUVu6+kyVnfF6SoLad8=",
       "System.Private.CoreLib.dll": "sha256-ixnF\/wVKLHZM1N0lfJufpZ41EC2LvvyiSqdW43h3Xew=",
-      "BootstrapMobile.Components.dll": "sha256-LkBrb5RUvV1B+k0mVwrqTNas0qB6nnMynrIR6AxYdDs=",
-      "BootstrapMobile.Wasm.dll": "sha256-RxOOkUEg7TSTMmYZhupyIpCkFTrKk\/HtRgqDNh3SDR4="
+      "BootstrapMobile.Components.dll": "sha256-4wblcx366SRifNgh0a3vorsxcns\/q96aQ81xWiDztlw=",
+      "BootstrapMobile.Wasm.dll": "sha256-9b8H3BYs5tA6je3Q\/7p1OusKbgBIWPtNvKhT0MklRqU="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "BootstrapMobile.Components.pdb": "sha256-FN\/Bx6vNY3lKbP2pUWixnFA\/uIFQYW44qo254YBVifg=",
-      "BootstrapMobile.Wasm.pdb": "sha256-h7v3WC1X4ftj4CUcszltyi2vOjsyq8dKpIeVUVohPu8="
+      "BootstrapMobile.Components.pdb": "sha256-5wwtYDg11hTCjnFAiwzwNXRn4VgHaU6h\/wuMmN6gpQE=",
+      "BootstrapMobile.Wasm.pdb": "sha256-lOLS\/XCUaCLVWW3V47Ef2OWyNjddnU8dU1Jrmbx6QGg="
     },
     "runtime": {
       "dotnet.7.0.12.kuaok8eruw.js": "sha256-cPJgWy8SjMaYFeimGkYy23ls+rDZVmoC\/eMoHpqRc+4=",

@@ -66,3 +66,4 @@ C:\Playground\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\Bootst
 C:\Playground\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\refint\BootstrapMobile.Components.dll
 C:\Playground\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\BootstrapMobile.Components.pdb
 C:\Playground\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\ref\BootstrapMobile.Components.dll
+C:\Playground\BootstrapMobile\BootstrapMobile.Components\obj\Debug\net7.0\scopedcss\Components\BModal.razor.rz.scp.css

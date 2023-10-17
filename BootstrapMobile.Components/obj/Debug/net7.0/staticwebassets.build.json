@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "nFcknl8kQERx4lebOqp/sbfVOmuxC/5Rq3bGEdy3MzY=",
+  "Hash": "55TRQ6Ij7GdR2lqctJJTvp2RVPnMLeXVT/3XyDAiyG0=",
   "Source": "BootstrapMobile.Components",
   "BasePath": "_content/BootstrapMobile.Components",
   "Mode": "Default",
@@ -287,6 +287,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\exampleJsInterop.js"
+    },
+    {
+      "Identity": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\interop.js",
+      "SourceId": "BootstrapMobile.Components",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\wwwroot\\",
+      "BasePath": "_content/BootstrapMobile.Components",
+      "RelativePath": "interop.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\interop.js"
     }
   ]
 }

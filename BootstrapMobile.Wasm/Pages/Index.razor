@@ -67,9 +67,13 @@
     </BAccordion>
     
     <BDivider Size="2" />
-    <BButton OnClick="ShowModal">Show Offcanvas Modal</BButton>
+    <BButton OnClick="@(()=> ShowModal( "Start Modal", "start", false))">Offcanvas</BButton>
+    <BButton OnClick="@(()=> ShowModal( "Right Modal", "end", false))">Right Offcanvas</BButton>
+    <BButton OnClick="@(()=> ShowModal( "Top Modal", "top", false))">Top Offcanvas</BButton>
+    <BButton OnClick="@(()=> ShowModal( "Bottom Modal", "bottom", false))">Bottom Offcanvas</BButton>
+    <BButton OnClick="@(()=> ShowModal( "FullScreen Modal", "bottom", true))">FullScreen Offcanvas</BButton>
 
-    <BModal @ref="modalReference"/>
+    <BModal @ref="modalReference" Title="@Title" Placement="@Placement" FullScreen="@FullScreen" />
 </BContent>
 
 @code{
@@ -81,8 +85,15 @@
         Console.WriteLine("it worked");
     }
 
-    async Task ShowModal()
+    private string Title = "Start Modal";
+    private string Placement = "start";
+    private bool FullScreen = false;
+    async Task ShowModal(string title, string placement, bool fullscreen)
     {
+        Title = title;
+        Placement = placement;
+        FullScreen = fullscreen;
+
         if (modalReference != null)
             await modalReference.Toggle();
     }

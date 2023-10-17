@@ -1,18 +1,26 @@
 ﻿@implements IAsyncDisposable;
 @using Microsoft.JSInterop;
 @inject IJSRuntime JSRuntime
-<div class="offcanvas offcanvas-start show" tabindex="-1" id="@modalId" aria-labelledby="offcanvasLabel" @ref="modalReference">
+<div class="offcanvas @placement" tabindex="-1" id="@modalId" aria-labelledby="offcanvasLabel" @ref="modalReference" style="@fullScreen">
     <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <h5 class="offcanvas-title" id="@(@modalId + "Label")">@Title</h5>
+        <button type="button" class="btn-close" aria-label="Close" @onclick="Close"></button>
     </div>
     <div class="offcanvas-body">
-        Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+        @ChildContent
     </div>
 </div>
 
 @code {
     //https://swimburger.net/blog/dotnet/interacting-with-javascript-objects-using-the-new-ijsobjectreference-in-blazor
+    [Parameter] public string Title { get; set; } = string.Empty;
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public string Placement { get; set; } = string.Empty;
+    [Parameter] public bool FullScreen { get; set; }
+
+    string fullScreen => FullScreen ? "width: 100%;height: 100%;" : "";
+    string placement => Placement == string.Empty ? "offcanvas-start" : "offcanvas-" + Placement;
+
     private string modalId = $"id_{Guid.NewGuid().ToString().Replace("-", "")}";
     private ElementReference modalReference;
     private DotNetObjectReference<BModal>? dotNetObjectReference;
@@ -20,16 +28,24 @@
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        var module = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/BootstrapMobile.Components/Components/BModal.razor.js?2");
+        // var module = await JSRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/BootstrapMobile.Components/Components/BModal.razor.js?2");
         dotNetObjectReference = DotNetObjectReference.Create(this);
-        jSObjectReference = await module.InvokeAsync<IJSObjectReference>("createBlazorOffcanvas");
+        jSObjectReference = await JSRuntime.InvokeAsync<IJSObjectReference>("createBlazorOffcanvas");
         await jSObjectReference.InvokeVoidAsync("init", dotNetObjectReference, modalReference);
     }
 
     public async Task Toggle()
     {
         if (jSObjectReference != null)
-            await jSObjectReference.InvokeVoidAsync("dispose");
+            await jSObjectReference.InvokeVoidAsync("toggleModal");
+        FullScreen = false;
+    }
+
+    public async Task Close()
+    {
+        if (jSObjectReference != null)
+            await jSObjectReference.InvokeVoidAsync("closeModal");
+        FullScreen = false;
     }
 
     public async ValueTask DisposeAsync()
