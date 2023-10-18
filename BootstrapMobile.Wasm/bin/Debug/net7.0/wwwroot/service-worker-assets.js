@@ -825,19 +825,19 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-3JKMrIPnMpWOsT0HSe+lYz388G9thF9uncQ3d6l26Ng=",
+      "hash": "sha256-ykWPKGgAJtZ7hl\/ZvHGAjF87s4BIEfZ1H+GBl1IPF78=",
       "url": "_framework\/BootstrapMobile.Components.dll"
     },
     {
-      "hash": "sha256-JMm45kkMk\/VpaicjoJp\/zYutPsYtnuS+IV37olqyVuA=",
+      "hash": "sha256-FmdJ0eNfXOYQ4ju5x08KIZHHtYjbzJsYlqV4CtgQkyc=",
       "url": "_framework\/BootstrapMobile.Components.pdb"
     },
     {
-      "hash": "sha256-9b8H3BYs5tA6je3Q\/7p1OusKbgBIWPtNvKhT0MklRqU=",
+      "hash": "sha256-OeSM2S38FvmLBV0xVV1L0dPV5E7qqCjtx4oPpD\/fbSI=",
       "url": "_framework\/BootstrapMobile.Wasm.dll"
     },
     {
-      "hash": "sha256-lOLS\/XCUaCLVWW3V47Ef2OWyNjddnU8dU1Jrmbx6QGg=",
+      "hash": "sha256-Lv9pOnqqNFc355jjfFlnkrzQi\/h29wD23C2y3Mw3tm4=",
       "url": "_framework\/BootstrapMobile.Wasm.pdb"
     },
     {
@@ -845,7 +845,7 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-ayR4g6UZ2\/oehp1Fw63MDPTCHUTjwaaDotSX+ZFFQrE=",
+      "hash": "sha256-vgVG9AHS2hhG4KQJ6fu1MIlD3xtQ23PNluj08Ci5VZk=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -913,5 +913,5 @@
       "url": "_content\/BootstrapMobile.Components\/interop.js"
     }
   ],
-  "version": "7n6CmTBK"
+  "version": "UY\/mdSFX"
 };

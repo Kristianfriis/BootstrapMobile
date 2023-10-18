@@ -198,14 +198,14 @@
       "mscorlib.dll": "sha256-8OmdVHzoN7xteY5ehp0L8R17I9QxFkH2lUVHFuslE0s=",
       "netstandard.dll": "sha256-urq+e2ZQXxmOWMRxTR92529HnUVu6+kyVnfF6SoLad8=",
       "System.Private.CoreLib.dll": "sha256-ixnF\/wVKLHZM1N0lfJufpZ41EC2LvvyiSqdW43h3Xew=",
-      "BootstrapMobile.Components.dll": "sha256-4wblcx366SRifNgh0a3vorsxcns\/q96aQ81xWiDztlw=",
+      "BootstrapMobile.Components.dll": "sha256-f5h58YJJHGccaRn6YkYREpEuf147tVBO2YrmkELVz+o=",
       "BootstrapMobile.Wasm.dll": "sha256-9b8H3BYs5tA6je3Q\/7p1OusKbgBIWPtNvKhT0MklRqU="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "BootstrapMobile.Components.pdb": "sha256-5wwtYDg11hTCjnFAiwzwNXRn4VgHaU6h\/wuMmN6gpQE=",
+      "BootstrapMobile.Components.pdb": "sha256-S+rCt57CQMhtS6+qZak77KFyrnCk1v+2b4sEugPlVjI=",
       "BootstrapMobile.Wasm.pdb": "sha256-lOLS\/XCUaCLVWW3V47Ef2OWyNjddnU8dU1Jrmbx6QGg="
     },
     "runtime": {

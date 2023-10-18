@@ -1,0 +1,62 @@
+﻿@page "/items"
+<PageTitle>Items</PageTitle>
+<BHeader Title="Items">
+</BHeader>
+<BContent Padding="true">
+    <BItem>
+        <BLabel>
+            <Content>
+                This is a BItem with a label
+            </Content>
+        </BLabel>
+    </BItem>
+
+    <BItem>
+        <BLabel>
+            <Header>Header</Header>
+            <Content>
+                This is a BItem with a label and a header
+            </Content>
+        </BLabel>
+    </BItem>
+
+    <BItem Line="true">
+        <BLabel>
+            <Content>
+                This is a BItem with a label and a underline
+            </Content>
+        </BLabel>
+    </BItem>
+
+    <BItem Line="true">
+        <BLabel>
+            <Header>Header</Header>
+            <Content>
+                This is a BItem with a label, a header and a underline
+            </Content>
+        </BLabel>
+    </BItem>
+
+    <BItem OnClick="ClickableTest">
+        <BLabel>
+            <Content>
+                This is a BItem with a label and is clickable
+            </Content>
+        </BLabel>
+    </BItem>
+    <BItem OnClick="ClickableTest">
+        <BLabel>
+            <Content>
+                This is a BItem with a label and is clickable and and Icon
+            </Content>
+        </BLabel>
+        <BIcon Icon="oi oi-cog"/>
+    </BItem>
+</BContent>
+
+@code {
+    private void ClickableTest()
+    {
+        
+    }
+}

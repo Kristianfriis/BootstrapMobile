@@ -1,0 +1,12 @@
+.b_item_wrapper {
+    min-height: 7vh;
+    padding: 0.25rem 0 0.25rem 0;
+}
+
+.clickable:not(:active) {
+    transition: background-color ease-in 0.15s;
+}
+
+.clickable:active {
+    background: var(--bs-gray-200);
+}

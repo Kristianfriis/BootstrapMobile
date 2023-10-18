@@ -1,0 +1,18 @@
+﻿<div class="d-flex text-wrap align-items-center">
+    <div class="@ClassString">
+        @if (Header is not null)
+        {
+            <h4 style="margin: 0;">@Header</h4>
+        }
+        <p style="margin: 0;" class="@PClassString">@Content</p>
+    </div>
+</div>
+
+
+@code {
+    [Parameter]public RenderFragment? Content { get; set; }
+    [Parameter]public RenderFragment? Header { get; set; }
+
+    string ClassString => Header == null ? "d-flex" : "d-flex flex-column";
+    string PClassString => Header != null ? "" : "align-self-center";
+}

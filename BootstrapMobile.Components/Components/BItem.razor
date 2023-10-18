@@ -1,0 +1,37 @@
+﻿<div class="@CreateClass()" @onclick="InvokeParentMethod" @attributes=AllOtherAttributes>
+    <div class="d-flex justify-content-between">
+        @ChildContent
+    </div>
+    @if (Line)
+    {
+        <hr style="margin: 0;" />
+    }
+</div>
+
+@code {
+    [Parameter]public RenderFragment? ChildContent{ get; set; }
+    [Parameter] public bool Line { get; set; } = true;
+    [Parameter] public EventCallback OnClick { get; set; }
+
+    [Parameter(CaptureUnmatchedValues = true)]
+    public Dictionary<string, object>? AllOtherAttributes { get; set; }
+
+    bool hasDelegate => OnClick.HasDelegate;
+
+    private async void InvokeParentMethod()
+    {
+        if (!OnClick.HasDelegate)
+            return;
+        await OnClick.InvokeAsync();
+    }
+
+    string CreateClass()
+    {
+        var result = "b_item_wrapper";
+
+        if (hasDelegate)
+            result = $"{result} clickable";
+
+        return result;
+    }
+}
