@@ -6,7 +6,6 @@
 }
 
 .navbar-toggler:not(:active) {
-    /* now keep red background for 1s */
     transition: background-color ease-in 0.15s;
 }
 

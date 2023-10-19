@@ -2,11 +2,21 @@ div {
     position: absolute;
     width: 100%;
 }
+
+@media screen and (min-width: 1200px) {
+    div {
+        width: 80vw;
+        margin: 0px auto;
+        left: 0;
+        right: 0;
+    }
+}
+
 .safepadding {
-    padding-top: var(--ion-padding);
-    padding-bottom: var(--ion-padding);
-    padding-left: var(--ion-padding);
-    padding-right: var(--ion-padding);
+    padding-top: var(--app-padding);
+    padding-bottom: var(--app-padding);
+    padding-left: var(--app-padding);
+    padding-right: var(--app-padding);
 }
 
 .content {
