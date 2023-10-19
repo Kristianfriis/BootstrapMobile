@@ -71,6 +71,48 @@
         </BLabel>
         <BIcon Icon="oi oi-cog" />
     </BItem>
+
+    <BItemSliding>
+        <LeftOptions>
+            <BItemOption Text="Delete" Type="danger" />
+        </LeftOptions>
+        <Item>
+            <BItem OnClick="ClickableTest">
+                <BLabel>
+                    <Header>
+                        Click Header
+                    </Header>
+                    <Content>
+                        This is a BItem with a label and is clickable and and Icon
+                    </Content>
+                </BLabel>
+                <BIcon Icon="oi oi-cog" />
+            </BItem>
+        </Item>
+        <RightOptions>
+            <BItemOption Text="Edit" />
+        </RightOptions>
+    </BItemSliding>
+
+    <BItemSliding>
+        <Item>
+            <BItem OnClick="ClickableTest">
+                <BLabel>
+                    <Header>
+                        Click Header
+                    </Header>
+                    <Content>
+                        This is a BItem with a label and is clickable and and Icon
+                    </Content>
+                </BLabel>
+                <BIcon Icon="oi oi-cog" />
+            </BItem>
+        </Item>
+        <RightOptions>
+            <BItemOption Text="Edit" />
+            <BItemOption Text="Delete" Type="danger" />
+        </RightOptions>
+    </BItemSliding>
 </BContent>
 
 @code {

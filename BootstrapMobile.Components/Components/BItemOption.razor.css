@@ -1,0 +1,25 @@
+.swipe_action {
+    display: flex;
+    align-items: center;
+    padding: 0 5px 0 5px;
+
+}
+/* icon should remain sticky */
+/*i {
+    color: white;
+    position: sticky;
+    left: 16px;
+    right: 16px;
+}*/
+.swipe_btn {
+/*    position: sticky;*/
+}
+/* action background colors */
+.left {
+/*    background-color: orchid;*/
+}
+
+.right {
+    justify-content: flex-end;
+/*    background-color: cornflowerblue;*/
+}

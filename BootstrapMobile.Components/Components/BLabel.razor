@@ -10,8 +10,8 @@
 
 
 @code {
-    [Parameter]public RenderFragment? Content { get; set; }
     [Parameter]public RenderFragment? Header { get; set; }
+    [Parameter] public RenderFragment? Content { get; set; }
 
     string ClassString => Header == null ? "d-flex" : "d-flex flex-column";
     string PClassString => Header != null ? "" : "align-self-center";

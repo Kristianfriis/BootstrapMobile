@@ -1,0 +1,22 @@
+.swipe_container {
+    display: flex;
+    overflow: auto;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.swipe_container::-webkit-scrollbar {
+    display: none;
+}
+
+.swipe_element {
+    scroll-snap-align: start;
+}
+
+.swipe_options {
+    display: flex;
+}
+
+/* actions and element should be 100% wide */
+.swipe_element {
+    min-width: 100%;
+}

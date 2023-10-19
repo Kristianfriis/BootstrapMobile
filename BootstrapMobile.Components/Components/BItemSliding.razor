@@ -1,0 +1,104 @@
+﻿@inject IJSRuntime JSRuntime
+<div class="swipe_container">
+    @if (LeftOptions is not null)
+    {
+        <div class="swipe_options left" @ref="LeftRef">
+            @LeftOptions
+        </div>
+    }
+
+    <div class="swipe_element">
+        @Item
+    </div>
+
+    @if (RightOptions is not null)
+    {
+        <div class="swipe_options right" @ref="RightRef">
+            @RightOptions
+        </div>
+    }
+
+</div>
+
+@code {
+    [Parameter] public RenderFragment? Item { get; set; }
+    [Parameter] public RenderFragment? RightOptions { get; set; }
+    [Parameter] public RenderFragment? LeftOptions { get; set; }
+
+    ElementReference? LeftRef;
+    ElementReference? RightRef;
+
+    private int swipeLeftWidth;
+    private int swipeRightWidth;
+    private readonly double OptimalSwipeSpeedMilliseconds = 0.8;
+    private (TouchPoint ReferencePoint, DateTime StartTime) StartTouch;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        swipeLeftWidth = await GetWidth(LeftRef);
+        swipeRightWidth = await GetWidth(RightRef);
+    }
+            
+
+    async Task<int> GetWidth(ElementReference? reference)
+    {
+        return reference != null ? await JSRuntime.InvokeAsync<int>("getElementWidth", reference) : 0;
+    }
+
+    public void HandleTouchStart(TouchEventArgs t)
+    {
+        var reference = t.Touches[0];
+        StartTouch.ReferencePoint = t.Touches[0];
+        StartTouch.StartTime = DateTime.Now;
+    }
+
+    public void HandleTouchEnd(TouchEventArgs t)
+    {
+        var reference = t.ChangedTouches[0];
+
+        var distanceX = StartTouch.ReferencePoint.ClientX - reference.ClientX;
+        var diffTime = DateTime.Now - StartTouch.StartTime;
+
+        var velocityX = Math.Abs(distanceX / diffTime.TotalMilliseconds);
+
+        if (distanceX < 0)
+        {
+            // if(velocityX >= OptimalSwipeSpeedMilliseconds || )
+            // if (_rightSwipe != null)
+            // {
+            //     _rightSwipe.Invoke();
+            // }
+        }
+        else
+        {
+            // if (_leftSwipe != null)
+            // {
+            //     _leftSwipe.Invoke();
+            // }
+        }
+
+        // if (velocityX >= OptimalSwipeSpeedMilliseconds)
+        // {
+        //     if (distanceX < 0)
+        //     {
+        //         if (_rightSwipe != null)
+        //         {
+        //             _rightSwipe.Invoke();
+        //         }
+        //     }
+        //     else
+        //     {
+        //         if (_leftSwipe != null)
+        //         {
+        //             _leftSwipe.Invoke();
+        //         }
+        //     }
+        //     return;
+
+        // }
+        // if (velocityX <= ClickOptimalSpeedMilliseconds)
+        // {
+        //     _click.Invoke();
+        // }
+    }
+}
