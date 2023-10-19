@@ -1,0 +1,37 @@
+﻿<button class="@CreateClass()" type="button" data-bs-toggle="offcanvas" data-bs-target="#@parent!.Id" aria-controls="offcanvasActionSheet" @onclick="InvokeParentMethod">
+    @Text
+</button>
+
+@code {
+    [CascadingParameter] public BActionSheet? parent { get; set; }
+    [Parameter] public string Text { get; set; } = string.Empty;
+    [Parameter] public bool Outline { get; set; }
+    [Parameter] public string Type { get; set; } = "primary";
+
+    string OutlineClass => Outline ? "-outline" : "";
+
+    [Parameter] public EventCallback OnClick { get; set; }
+
+    bool hasDelegate => OnClick.HasDelegate;
+
+    private async void InvokeParentMethod()
+    {
+        if (!OnClick.HasDelegate)
+            return;
+        await OnClick.InvokeAsync();
+    }
+
+    protected override void OnInitialized()
+    {
+        @if (parent is null)
+            throw new NullReferenceException("BActionSheetButton has to be initialzed within a BActionSheet");
+    }
+
+    string CreateClass()
+    {
+        if (Outline)
+            return "btn btn-outline-" + Type;
+
+        return "btn btn-" + Type;
+    }
+}

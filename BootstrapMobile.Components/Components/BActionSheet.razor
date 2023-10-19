@@ -1,0 +1,18 @@
+﻿<div class="offcanvas offcanvas-bottom" tabindex="-1" id="@Id" aria-labelledby="offcanvasActionSheet">
+  <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasActionSheetLabel">@Title</h5>
+  </div>
+  <div class="offcanvas-body">
+        <div class="vstack gap-3">
+            <CascadingValue Value="this">
+                @ChildContent
+                <BActionSheetButton Outline="true" Type="danger" Text="Cancel" />
+            </CascadingValue>
+        </div>
+  </div>
+</div>
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public string Title { get; set; } = string.Empty;
+    [Parameter] public string Id { get; set; } = string.Empty;
+}
