@@ -9,6 +9,8 @@
 }
 
 .swipe_element {
+}
+.scroll-snap-align {
     scroll-snap-align: start;
 }
 

@@ -235,6 +235,6 @@ var createBlazorOffcanvas = function () {
 }
 
 var getElementWidth = (elementRef) => {
-    return elementRef.offsetWidth()
+    return elementRef.offsetWidth
 }
 

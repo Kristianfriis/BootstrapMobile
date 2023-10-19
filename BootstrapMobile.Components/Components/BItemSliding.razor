@@ -7,7 +7,7 @@
         </div>
     }
 
-    <div class="swipe_element">
+    <div class="swipe_element @scrollSnapAlign" @ontouchstart="HandleTouchStart" @ontouchend="HandleTouchEnd">
         @Item
     </div>
 
@@ -30,6 +30,10 @@
 
     private int swipeLeftWidth;
     private int swipeRightWidth;
+
+    const string scrollSnapAlignKey = "scroll-snap-align";
+    private string scrollSnapAlign = scrollSnapAlignKey;
+
     private readonly double OptimalSwipeSpeedMilliseconds = 0.8;
     private (TouchPoint ReferencePoint, DateTime StartTime) StartTouch;
 
@@ -38,21 +42,26 @@
         swipeLeftWidth = await GetWidth(LeftRef);
         swipeRightWidth = await GetWidth(RightRef);
     }
-            
+
 
     async Task<int> GetWidth(ElementReference? reference)
     {
         return reference != null ? await JSRuntime.InvokeAsync<int>("getElementWidth", reference) : 0;
     }
 
-    public void HandleTouchStart(TouchEventArgs t)
+    public void ResetSwipe()
+    {
+        scrollSnapAlign = scrollSnapAlignKey;
+    }
+
+    private void HandleTouchStart(TouchEventArgs t)
     {
         var reference = t.Touches[0];
         StartTouch.ReferencePoint = t.Touches[0];
         StartTouch.StartTime = DateTime.Now;
     }
 
-    public void HandleTouchEnd(TouchEventArgs t)
+    private void HandleTouchEnd(TouchEventArgs t)
     {
         var reference = t.ChangedTouches[0];
 
@@ -63,42 +72,17 @@
 
         if (distanceX < 0)
         {
-            // if(velocityX >= OptimalSwipeSpeedMilliseconds || )
-            // if (_rightSwipe != null)
-            // {
-            //     _rightSwipe.Invoke();
-            // }
+            if (velocityX >= OptimalSwipeSpeedMilliseconds || distanceX <= (swipeRightWidth * 0.8))
+                scrollSnapAlign = string.Empty;
+            else
+                ResetSwipe();
         }
         else
         {
-            // if (_leftSwipe != null)
-            // {
-            //     _leftSwipe.Invoke();
-            // }
+            if (velocityX >= OptimalSwipeSpeedMilliseconds || distanceX <= (swipeLeftWidth * 0.8))
+                scrollSnapAlign = string.Empty;
+            else
+                ResetSwipe();
         }
-
-        // if (velocityX >= OptimalSwipeSpeedMilliseconds)
-        // {
-        //     if (distanceX < 0)
-        //     {
-        //         if (_rightSwipe != null)
-        //         {
-        //             _rightSwipe.Invoke();
-        //         }
-        //     }
-        //     else
-        //     {
-        //         if (_leftSwipe != null)
-        //         {
-        //             _leftSwipe.Invoke();
-        //         }
-        //     }
-        //     return;
-
-        // }
-        // if (velocityX <= ClickOptimalSpeedMilliseconds)
-        // {
-        //     _click.Invoke();
-        // }
     }
 }
