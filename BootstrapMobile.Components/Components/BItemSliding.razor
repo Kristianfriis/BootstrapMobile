@@ -1,5 +1,5 @@
 ﻿@inject IJSRuntime JSRuntime
-<div class="swipe_container">
+<div class="swipe_container" @ref="SwipeContainerRef">
     @if (LeftOptions is not null)
     {
         <div class="swipe_options left" @ref="LeftRef">
@@ -7,7 +7,7 @@
         </div>
     }
 
-    <div class="swipe_element @scrollSnapAlign" @ontouchstart="HandleTouchStart" @ontouchend="HandleTouchEnd">
+    <div class="swipe_element @scrollSnapAlign" @ref="SwipeReference">
         @Item
     </div>
 
@@ -27,9 +27,13 @@
 
     ElementReference? LeftRef;
     ElementReference? RightRef;
+    ElementReference? SwipeContainerRef;
+    ElementReference? SwipeReference;
+    private DotNetObjectReference<BItemSliding>? dotNetObjectReference;
+    private IJSObjectReference? jSObjectReference;
 
-    private int swipeLeftWidth;
-    private int swipeRightWidth;
+    private int optionsLeftWidth;
+    private int optionsRightWidth;
 
     const string scrollSnapAlignKey = "scroll-snap-align";
     private string scrollSnapAlign = scrollSnapAlignKey;
@@ -39,50 +43,17 @@
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        swipeLeftWidth = await GetWidth(LeftRef);
-        swipeRightWidth = await GetWidth(RightRef);
+        optionsLeftWidth = await GetWidth(LeftRef);
+        optionsRightWidth = await GetWidth(RightRef);
+        var longestWidth = Math.Max(optionsRightWidth, optionsLeftWidth);
+        dotNetObjectReference = DotNetObjectReference.Create(this);
+        jSObjectReference = await JSRuntime.InvokeAsync<IJSObjectReference>("blazorGesture");
+        await jSObjectReference.InvokeVoidAsync("init", dotNetObjectReference, SwipeReference, longestWidth);
     }
 
 
     async Task<int> GetWidth(ElementReference? reference)
     {
         return reference != null ? await JSRuntime.InvokeAsync<int>("getElementWidth", reference) : 0;
-    }
-
-    public void ResetSwipe()
-    {
-        scrollSnapAlign = scrollSnapAlignKey;
-    }
-
-    private void HandleTouchStart(TouchEventArgs t)
-    {
-        var reference = t.Touches[0];
-        StartTouch.ReferencePoint = t.Touches[0];
-        StartTouch.StartTime = DateTime.Now;
-    }
-
-    private void HandleTouchEnd(TouchEventArgs t)
-    {
-        var reference = t.ChangedTouches[0];
-
-        var distanceX = StartTouch.ReferencePoint.ClientX - reference.ClientX;
-        var diffTime = DateTime.Now - StartTouch.StartTime;
-
-        var velocityX = Math.Abs(distanceX / diffTime.TotalMilliseconds);
-
-        if (distanceX < 0)
-        {
-            if (velocityX >= OptimalSwipeSpeedMilliseconds || distanceX <= (swipeRightWidth * 0.8))
-                scrollSnapAlign = string.Empty;
-            else
-                ResetSwipe();
-        }
-        else
-        {
-            if (velocityX >= OptimalSwipeSpeedMilliseconds || distanceX <= (swipeLeftWidth * 0.8))
-                scrollSnapAlign = string.Empty;
-            else
-                ResetSwipe();
-        }
     }
 }
