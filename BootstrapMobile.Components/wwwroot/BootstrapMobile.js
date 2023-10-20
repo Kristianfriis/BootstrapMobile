@@ -262,12 +262,12 @@ var blazorGesture = function () {
                         if (x < -revealWidth) {
                             return (x + revealWidth) / decelerationOnOverflow - revealWidth;
                         }
-                        if (x > revealWidth) {
-                            return (x - revealWidth) / decelerationOnOverflow + revealWidth;
-                        }
                     };
                     const newX = getX(startOffset + gesture.touchMoveX);
-                    target.style.transform = "translateX(" + newX + "px)";
+                    if (newX <= 0) {
+                        target.style.transform = "translateX(" + newX + "px)";
+                    }
+
                     if (newX >= snapWidth || newX <= -snapWidth) {
                         swiped = newX < 0 ? -revealWidth : revealWidth;
                     } else {

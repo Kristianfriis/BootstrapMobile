@@ -1,6 +1,6 @@
 .swipe_container {
     position: relative;
-    overflow: auto;
+/*    overflow: auto;*/
     /*    display: flex;
     overflow: auto;
     overflow-x: scroll;
@@ -36,10 +36,4 @@
 
 .right {
     right: 0;
-    text-align: right;
-    flex-direction: row-reverse;
-}
-.left {
-    text-align: left;
-    left: 0;
 }

@@ -1,12 +1,5 @@
 ﻿@inject IJSRuntime JSRuntime
 <div class="swipe_container" @ref="SwipeContainerRef">
-    @if (LeftOptions is not null)
-    {
-        <div class="swipe_options left" @ref="LeftRef">
-            @LeftOptions
-        </div>
-    }
-
     <div class="swipe_element @scrollSnapAlign" @ref="SwipeReference">
         @Item
     </div>
@@ -25,14 +18,12 @@
     [Parameter] public RenderFragment? RightOptions { get; set; }
     [Parameter] public RenderFragment? LeftOptions { get; set; }
 
-    ElementReference? LeftRef;
     ElementReference? RightRef;
     ElementReference? SwipeContainerRef;
     ElementReference? SwipeReference;
     private DotNetObjectReference<BItemSliding>? dotNetObjectReference;
     private IJSObjectReference? jSObjectReference;
 
-    private int optionsLeftWidth;
     private int optionsRightWidth;
 
     const string scrollSnapAlignKey = "scroll-snap-align";
@@ -43,12 +34,10 @@
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        optionsLeftWidth = await GetWidth(LeftRef);
         optionsRightWidth = await GetWidth(RightRef);
-        var longestWidth = Math.Max(optionsRightWidth, optionsLeftWidth);
         dotNetObjectReference = DotNetObjectReference.Create(this);
         jSObjectReference = await JSRuntime.InvokeAsync<IJSObjectReference>("blazorGesture");
-        await jSObjectReference.InvokeVoidAsync("init", dotNetObjectReference, SwipeReference, longestWidth);
+        await jSObjectReference.InvokeVoidAsync("init", dotNetObjectReference, SwipeReference, optionsRightWidth);
     }
 
 
