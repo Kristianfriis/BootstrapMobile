@@ -1,0 +1,5 @@
+.accordion {
+    --bs-accordion-active-color: var(--bs-black);
+    --bs-accordion-active-bg: var(--bs-light);
+    --bs-accordion-btn-color: var(--bs-gray-700);
+}

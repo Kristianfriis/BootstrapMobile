@@ -1,7 +1,9 @@
 ﻿<div class="@CreateClass()" @onclick="InvokeParentMethod" @attributes=AllOtherAttributes>
-    <div class="d-flex justify-content-between">
-        @ChildContent
-    </div>
+    <CascadingValue Value=this>
+        <div class="@lineClass">
+            @ChildContent
+        </div>
+    </CascadingValue>
     @if (Line)
     {
         <hr style="margin: 0;" />
@@ -12,9 +14,12 @@
     [Parameter]public RenderFragment? ChildContent{ get; set; }
     [Parameter] public bool Line { get; set; } = true;
     [Parameter] public EventCallback OnClick { get; set; }
+    [Parameter] public bool MultipleItems { get; set; } = true;
 
     [Parameter(CaptureUnmatchedValues = true)]
     public Dictionary<string, object>? AllOtherAttributes { get; set; }
+
+    string lineClass => MultipleItems ? "d-flex justify-content-between" : "";
 
     bool hasDelegate => OnClick.HasDelegate;
 
@@ -24,7 +29,7 @@
             return;
         await OnClick.InvokeAsync();
     }
-
+    
     string CreateClass()
     {
         var result = "b_item_wrapper";

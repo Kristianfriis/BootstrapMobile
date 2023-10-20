@@ -6,17 +6,18 @@ namespace BootstrapMobile.JsInterop;
 public class MobileBootstrapInterop : IAsyncDisposable
 {
     private readonly Lazy<Task<IJSObjectReference>> moduleTask;
+    private readonly IJSRuntime jsRuntime;
 
     public MobileBootstrapInterop(IJSRuntime jsRuntime)
     {
+        this.jsRuntime = jsRuntime;
         moduleTask = new(() => jsRuntime.InvokeAsync<IJSObjectReference>(
             "import", "./_content/BootstrapMobile.Components/exampleJsInterop.js?2").AsTask());
     }
 
     public async ValueTask GoBack()
     {
-        var module = await moduleTask.Value;
-        await module.InvokeVoidAsync("CanGoBack");
+        await jsRuntime.InvokeVoidAsync("window.history.back");
     }
 
     public async Task ToogleOffCanvas(ElementReference element)

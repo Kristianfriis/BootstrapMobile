@@ -67,19 +67,59 @@
     </BAccordion>
     
     <BDivider Size="2" />
-    <BButton OnClick="@(()=> ShowModal( "Start Modal", "start", false))">Offcanvas</BButton>
-    <BButton OnClick="@(()=> ShowModal( "Right Modal", "end", false))">Right Offcanvas</BButton>
-    <BButton OnClick="@(()=> ShowModal( "Top Modal", "top", false))">Top Offcanvas</BButton>
-    <BButton OnClick="@(()=> ShowModal( "Bottom Modal", "bottom", false))">Bottom Offcanvas</BButton>
-    <BButton OnClick="@(()=> ShowModal( "FullScreen Modal", "bottom", true))">FullScreen Offcanvas</BButton>
+    <BItem>
+        <BLabel>
+            <Content>
+                FullScreen:
+            </Content>
+        </BLabel>
+        <BToggle @bind-Value="FullScreen" />
+    </BItem>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#demomodal">
+        Launch demo modal
+    </button>
 
-    <BModal @ref="modalReference" Title="@Title" Placement="@Placement" FullScreen="@FullScreen" />
+    <BModal @ref="modalReference" Title="@Title" Placement="@Placement" FullScreen="@FullScreen" Id="demomodal">
+        <Body>
+            <BItem>
+                <BLabel>
+                    <Content>
+                        This is a BItem with a label
+                    </Content>
+                </BLabel>
+            </BItem>
+
+            <BItem>
+                <BLabel>
+                    <Header>Header</Header>
+                    <Content>
+                        This is a BItem with a label and a header
+                    </Content>
+                </BLabel>
+            </BItem>
+            <BItem OnClick="ClickableTest">
+                <BLabel>
+                    <Content>
+                        This is a BItem with a label and is clickable
+                    </Content>
+                </BLabel>
+            </BItem>
+        </Body>
+        <Actions>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" @onclick="Hide">Save changes</button>
+        </Actions>
+    </BModal>
 </BContent>
 
 @code{
     public string TestString = "1";
     public bool TestBool = false;
     BModal? modalReference;
+    private void ClickableTest()
+    {
+
+    }
     private void Test()
     {
         Console.WriteLine("it worked");
@@ -88,15 +128,6 @@
     private string Title = "Start Modal";
     private string Placement = "start";
     private bool FullScreen = false;
-    async Task ShowModal(string title, string placement, bool fullscreen)
-    {
-        Title = title;
-        Placement = placement;
-        FullScreen = fullscreen;
-
-        if (modalReference != null)
-            await modalReference.Toggle();
-    }
 
     private void ShowToast()
     {
@@ -105,5 +136,11 @@
     private void ShowToastError()
     {
         toastService.ShowToast("I'm a Error message", ToastLevel.Error);
+    }
+
+    private async Task Hide()
+    {
+        if (modalReference is not null)
+            await modalReference.Hide();
     }
 }

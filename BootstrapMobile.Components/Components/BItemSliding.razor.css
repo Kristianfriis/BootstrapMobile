@@ -1,10 +1,5 @@
 .swipe_container {
     position: relative;
-/*    overflow: auto;*/
-    /*    display: flex;
-    overflow: auto;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;*/
 }
 .swipe_container::-webkit-scrollbar {
     display: none;

@@ -312,3 +312,23 @@ var blazorGesture = function () {
 var getElementWidth = (elementRef) => {
     return elementRef.offsetWidth
 }
+
+var dismissModal = (elementId) => {
+    var modal = bootstrap.Modal.getInstance("#" + elementId);
+    if (modal == null) {
+        console.log("cant dismiss modal")
+    }
+    else {
+        modal.hide();
+    }
+}
+
+var showModal = (elementId) => {
+    var modal = bootstrap.Modal.getInstance("#" + elementId);
+    if (modal == null) {
+        console.log("cant show modal")
+    }
+    else {
+        modal.show();
+    }
+}

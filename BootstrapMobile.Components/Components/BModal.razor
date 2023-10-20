@@ -1,62 +1,42 @@
-﻿@implements IAsyncDisposable;
-@using Microsoft.JSInterop;
-@inject IJSRuntime JSRuntime
-<div class="offcanvas @placement" tabindex="-1" id="@modalId" aria-labelledby="offcanvasLabel" @ref="modalReference">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="@(@modalId + "Label")">@Title</h5>
-        <button type="button" class="btn-close" aria-label="Close" @onclick="Close" data-bs-dismiss="@modalId"></button>
-    </div>
-    <div class="offcanvas-body">
-        @ChildContent
+﻿@inject IJSRuntime JSRuntime
+
+<div class="modal fade" id="@Id" tabindex="-1" aria-labelledby="@Id-Label" aria-hidden="true">
+    <div class="modal-dialog @fullScreen">
+        <div class="modal-content" style="height: 100%;">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">@Title</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                @Body
+            </div>
+            <div class="modal-footer">
+                @Actions
+            </div>
+        </div>
     </div>
 </div>
 
 @code {
-    //https://swimburger.net/blog/dotnet/interacting-with-javascript-objects-using-the-new-ijsobjectreference-in-blazor
     [Parameter] public string Title { get; set; } = string.Empty;
-    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public RenderFragment? Body { get; set; }
+    [Parameter] public RenderFragment? Actions { get; set; }
     [Parameter] public string Placement { get; set; } = string.Empty;
     [Parameter] public bool FullScreen { get; set; }
+    [Parameter] public string Id { get; set; } = string.Empty;
 
-    string fullScreen => FullScreen ? "width: 100%;height: 100%;" : "";
+    string fullScreen => FullScreen ? "modal-centered" : "";
     string placement => Placement == string.Empty ? "offcanvas-start" : "offcanvas-" + Placement;
 
     private string modalId = $"id_{Guid.NewGuid().ToString().Replace("-", "")}";
-    private ElementReference modalReference;
-    private DotNetObjectReference<BModal>? dotNetObjectReference;
-    private IJSObjectReference? jSObjectReference;
 
-    protected override async Task OnAfterRenderAsync(bool firstRender)
+    public async Task Hide()
     {
-        dotNetObjectReference = DotNetObjectReference.Create(this);
-        jSObjectReference = await JSRuntime.InvokeAsync<IJSObjectReference>("createBlazorOffcanvas");
-        await jSObjectReference.InvokeVoidAsync("init", dotNetObjectReference, modalReference);
+        await JSRuntime.InvokeVoidAsync("dismissModal", Id);
     }
 
-    public async Task Toggle()
+    public async Task Show()
     {
-        if (jSObjectReference != null)
-            await jSObjectReference.InvokeVoidAsync("toggleModal");
-        FullScreen = false;
-    }
-
-    public async Task Close()
-    {
-        if (jSObjectReference != null)
-            await jSObjectReference.InvokeVoidAsync("closeModal");
-        FullScreen = false;
-    }
-
-    public async ValueTask DisposeAsync()
-    {
-        if (jSObjectReference != null)
-        {
-            await jSObjectReference.InvokeVoidAsync("dispose");
-            await jSObjectReference.DisposeAsync();
-        }
-        if(dotNetObjectReference != null)
-        {
-            dotNetObjectReference.Dispose();
-        }
+        await JSRuntime.InvokeVoidAsync("showModal", Id);
     }
 }
