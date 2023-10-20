@@ -332,3 +332,23 @@ var showModal = (elementId) => {
         modal.show();
     }
 }
+
+var dismissOffcanvas = (elementId) => {
+    var modal = bootstrap.Offcanvas.getOrCreateInstance("#" + elementId);
+    if (modal == null) {
+        console.log("cant dismiss Offcanvas")
+    }
+    else {
+        modal.hide();
+    }
+}
+
+var showOffcanvas = (elementId) => {
+    var modal = bootstrap.Offcanvas.getOrCreateInstance("#" + elementId);
+    if (modal == null) {
+        console.log("cant show Offcanvas")
+    }
+    else {
+        modal.show();
+    }
+}

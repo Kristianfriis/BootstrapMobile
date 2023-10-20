@@ -92,11 +92,17 @@
             </Content>
         </BAccordionItem>
     </BAccordion>
+
+    <BActionSheet Title="Actions" Id="ItemActions" @ref="ActionSheetRef">
+  
+    </BActionSheet>
 </BContent>
 
 @code {
-    private void ClickableTest()
+    private BActionSheet? ActionSheetRef;
+    private async Task ClickableTest()
     {
-
+        if (ActionSheetRef is not null)
+            await ActionSheetRef.Show();
     }
 }

@@ -21,14 +21,10 @@
     [Parameter] public string Title { get; set; } = string.Empty;
     [Parameter] public RenderFragment? Body { get; set; }
     [Parameter] public RenderFragment? Actions { get; set; }
-    [Parameter] public string Placement { get; set; } = string.Empty;
     [Parameter] public bool FullScreen { get; set; }
     [Parameter] public string Id { get; set; } = string.Empty;
 
     string fullScreen => FullScreen ? "modal-centered" : "";
-    string placement => Placement == string.Empty ? "offcanvas-start" : "offcanvas-" + Placement;
-
-    private string modalId = $"id_{Guid.NewGuid().ToString().Replace("-", "")}";
 
     public async Task Hide()
     {
