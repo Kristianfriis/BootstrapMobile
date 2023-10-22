@@ -9,6 +9,8 @@
 	<PackageVersion>1.0.1</PackageVersion>
 	<PackageProjectUrl>https://github.com/Kristianfriis/BootstrapMobile/</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/Kristianfriis/BootstrapMobile</RepositoryUrl>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
 
@@ -18,7 +20,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.11" />
-	<None Include="..\README.md" Pack="true" PackagePath="\" />
-	<None Include="..\LICENSE.txt" Pack="true" PackagePath="" />
+	<None Include="README.md" Pack="true" PackagePath="\" />
+	<None Include="LICENSE.txt" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>
