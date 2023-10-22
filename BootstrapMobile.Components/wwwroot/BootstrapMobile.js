@@ -314,7 +314,7 @@ var getElementWidth = (elementRef) => {
 }
 
 var dismissModal = (elementId) => {
-    var modal = bootstrap.Modal.getInstance("#" + elementId);
+    var modal = bootstrap.Modal.getOrCreateInstance("#" + elementId);
     if (modal == null) {
         console.log("cant dismiss modal")
     }
@@ -324,7 +324,7 @@ var dismissModal = (elementId) => {
 }
 
 var showModal = (elementId) => {
-    var modal = bootstrap.Modal.getInstance("#" + elementId);
+    var modal = bootstrap.Modal.getOrCreateInstance("#" + elementId);
     if (modal == null) {
         console.log("cant show modal")
     }
