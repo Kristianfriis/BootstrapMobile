@@ -476,7 +476,7 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
-      "BootstrapMobile.Components/1.0.1": {
+      "BootstrapMobile.Components/1.0.3": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -959,7 +959,7 @@
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
       },
-      "BootstrapMobile.Components/1.0.1": {
+      "BootstrapMobile.Components/1.0.3": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -1819,7 +1819,7 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "BootstrapMobile.Components/1.0.1": {
+    "BootstrapMobile.Components/1.0.3": {
       "type": "project",
       "path": "../BootstrapMobile.Components/BootstrapMobile.Components.csproj",
       "msbuildProject": "../BootstrapMobile.Components/BootstrapMobile.Components.csproj"
@@ -1827,7 +1827,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "BootstrapMobile.Components >= 1.0.1",
+      "BootstrapMobile.Components >= 1.0.3",
       "Microsoft.AspNetCore.Components.WebAssembly >= 7.0.11",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 7.0.11"
     ]

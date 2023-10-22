@@ -1,5 +1,5 @@
 ﻿<div class="d-flex text-wrap align-items-center">
-    <div class="@ClassString">
+    <div class="@ClassString()">
         @if (Header is not null)
         {
             <h4 style="margin: 0;">@Header</h4>
@@ -13,6 +13,16 @@
     [Parameter]public RenderFragment? Header { get; set; }
     [Parameter] public RenderFragment? Content { get; set; }
 
-    string ClassString => Header == null ? "d-flex" : "d-flex flex-column";
     string PClassString => Header != null ? "" : "align-self-center";
+
+    string ClassString()
+    {
+        if (Header == null)
+            return "d-flex";
+
+        if (Header != null && Content == null)
+            return "d-flex align-items-center";
+
+        return "d-flex flex-column";
+    }
 }

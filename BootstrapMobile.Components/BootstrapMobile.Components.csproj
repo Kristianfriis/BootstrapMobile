@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>BootstrapMobile</Title>
-	<PackageVersion>1.0.1</PackageVersion>
+	<PackageVersion>1.0.3</PackageVersion>
 	<PackageProjectUrl>https://github.com/Kristianfriis/BootstrapMobile/</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/Kristianfriis/BootstrapMobile</RepositoryUrl>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
