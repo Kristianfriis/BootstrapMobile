@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BV8W0KRbIQD9pbp3//dPImKDl1U9p6pa/vGKNJwBaQzg7EAeHEyw2np+/rf9qGemLdfs9w5nbf27OzjuNx6uMw==",
+  "dgSpecHash": "YtZiz1SQ0nIMrKASZbERuuATQPVi91Vd08xUM84k2PqkNRujYCyFuSffJyV2q45UkFkvPMLd+6423tNF0gU1gg==",
   "success": true,
   "projectFilePath": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Wasm\\BootstrapMobile.Wasm.csproj",
   "expectedPackageFiles": [
@@ -31,7 +31,6 @@
     "C:\\Users\\friis\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
     "C:\\Users\\friis\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\friis\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
-    "C:\\Users\\friis\\.nuget\\packages\\bootstrapmobile.components\\1.0.0\\bootstrapmobile.components.1.0.0.nupkg.sha512",
     "C:\\Users\\friis\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\7.0.12\\microsoft.netcore.app.runtime.mono.browser-wasm.7.0.12.nupkg.sha512"
   ],
   "logs": []
