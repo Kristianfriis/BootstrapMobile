@@ -1833,25 +1833,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\friis\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\kf\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Wasm\\BootstrapMobile.Wasm.csproj",
+      "projectUniqueName": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\BootstrapMobile.Wasm.csproj",
       "projectName": "BootstrapMobile.Wasm",
-      "projectPath": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Wasm\\BootstrapMobile.Wasm.csproj",
-      "packagesPath": "C:\\Users\\friis\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Wasm\\obj\\",
+      "projectPath": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\BootstrapMobile.Wasm.csproj",
+      "packagesPath": "C:\\Users\\kf\\.nuget\\packages\\",
+      "outputPath": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Wasm\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\friis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\kf\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -1859,14 +1862,15 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.asserver.local/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\BootstrapMobile.Components.csproj": {
-              "projectPath": "D:\\Projects\\BootstrapMobile\\BootstrapMobile.Components\\BootstrapMobile.Components.csproj"
+            "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\BootstrapMobile.Components.csproj": {
+              "projectPath": "C:\\Playground\\BootstrapMobile\\BootstrapMobile.Components\\BootstrapMobile.Components.csproj"
             }
           }
         }
@@ -1913,7 +1917,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

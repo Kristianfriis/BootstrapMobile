@@ -17,5 +17,22 @@
       "type": "image/png",
       "sizes": "192x192"
     }
+  ],
+  "shortcuts": [
+    {
+      "name": "Items",
+      "url": "/items",
+      "description": "Items demonstration",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192"
+        },
+        {
+          "src": "icon-96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
   ]
 }
