@@ -1,0 +1,16 @@
+div {
+    min-height: 6vh;
+}
+
+.row {
+     padding-right: 0; 
+     padding-left: 0;
+}
+
+.clickable:not(:active) {
+    transition: background-color ease-in 0.15s;
+}
+
+.clickable:active {
+    background: var(--bs-gray-200);
+}

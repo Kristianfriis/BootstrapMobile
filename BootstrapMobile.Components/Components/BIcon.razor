@@ -1,6 +1,9 @@
-﻿<span class="@Icon @Size align-self-center text-center" aria-hidden="true"></span>
+﻿<span class="@Icon @Size align-self-center text-center" aria-hidden="true" style="@Style"></span>
 
 @code {
     [Parameter] public string Icon { get; set; } = string.Empty;
     [Parameter] public string Size { get; set; } = "fs-4";
+    [Parameter] public bool FullWidth { get; set; }
+
+    string Style => FullWidth ? "width: 100%" : string.Empty;
 }

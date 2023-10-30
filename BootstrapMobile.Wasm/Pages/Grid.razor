@@ -1,0 +1,91 @@
+﻿@page "/grid"
+
+<PageTitle>Grid</PageTitle>
+<BHeader Title="Grid"></BHeader>
+<BContent Padding="true">
+  <BContainer Fluid="true">
+    <BRow>
+        <BCol>
+            Column
+        </BCol>
+        <BCol>
+            Column
+        </BCol>
+        <BCol>
+            Column
+        </BCol>
+    </BRow>
+    <BRow Line="true">
+        <BCol>
+            Column
+        </BCol>
+        <BCol>
+            Column
+        </BCol>
+        <BCol>
+            Column
+        </BCol>
+    </BRow>
+    <BRow Line="true">
+            <BCol Style="background-color: rgba(39,41,43,0.03); border: 1px solid rgba(39,41,43,0.1);">
+            1 of 3
+        </BCol>
+            <BCol Size="6" Style="background-color: rgba(39,41,43,0.03); border: 1px solid rgba(39,41,43,0.1);">
+            2 of 3 (wider)
+        </BCol>
+            <BCol Style="background-color: rgba(39,41,43,0.03); border: 1px solid rgba(39,41,43,0.1);">
+            3 of 3
+        </BCol>
+    </BRow>
+    <BRow>
+            <BCol Style="background-color: rgba(39,41,43,0.03); border: 1px solid rgba(39,41,43,0.1);">
+            1 of 3
+        </BCol>
+            <BCol Size="5" Style="background-color: rgba(39,41,43,0.03); border: 1px solid rgba(39,41,43,0.1);">
+            2 of 3 (wider)
+        </BCol>
+            <BCol Style="background-color: rgba(39,41,43,0.03); border: 1px solid rgba(39,41,43,0.1);">
+            3 of 3
+        </BCol>
+    </BRow>
+  </BContainer>
+  <BContainer Fluid="true">
+      <BRow Line="true" OnClick="ClickableTest">
+          <BCol Size="10">
+                <BLabel>
+                    <Header>
+                        Click Header
+                    </Header>
+                    <Content>
+                        This is a BItem with a label and is clickable and and Icon
+                    </Content>
+                </BLabel>
+          </BCol>
+          <BCol>
+                <BIcon Icon="oi oi-cog" FullWidth="true"/>
+          </BCol>
+      </BRow>
+  </BContainer>
+    <BContainer Fluid="true">
+        <BRow Line="true" OnClick="ClickableTest">
+            <BCol Size="10">
+                <BLabel>
+                    <Content>
+                        This is a BItem with a label and is clickable and and Icon
+                    </Content>
+                </BLabel>
+            </BCol>
+            <BCol>
+                <BIcon Icon="oi oi-cog" FullWidth="true" />
+            </BCol>
+        </BRow>
+    </BContainer>
+</BContent>
+
+
+@code {
+    private void ClickableTest()
+    {
+
+    }
+}

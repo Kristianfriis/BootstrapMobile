@@ -1,0 +1,20 @@
+﻿<div class="@GetClass()" style="@Style" @attributes=AllOtherAttributes>
+     @ChildContent
+ </div>
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public int Size { get; set; } = 0;
+    [Parameter] public bool VariableWidth { get; set; }
+    [Parameter] public string Style { get; set; } = string.Empty;
+    public Dictionary<string, object>? AllOtherAttributes { get; set; }
+
+    string GetClass()
+    {
+        if (VariableWidth)
+            return "col-md-auto d-flex align-items-center";
+        if (Size > 0)
+            return $"col-{Size} d-flex align-items-center";
+
+        return "col d-flex align-items-center";
+    }
+}
