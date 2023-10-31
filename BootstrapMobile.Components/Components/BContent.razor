@@ -15,9 +15,9 @@
         if (BApp != null)
         {
             if (BApp.Tabbar)
-                height = height - 7;
-            if (BApp.Header)
                 height = height - 10;
+            if (BApp.Header)
+                height = height - 7;
         }
 
         return $"height: {height}vh;";
