@@ -25,6 +25,8 @@
     {
         @if (parent is null)
             throw new NullReferenceException("BActionSheetButton has to be initialzed within a BActionSheet");
+
+        parent.AddActionSheetButton(); 
     }
 
     string CreateClass()

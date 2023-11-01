@@ -1,0 +1,20 @@
+﻿@page "/actionsheet"
+<PageTitle>ActionSheet</PageTitle>
+<BHeader Title="ActionSheet"></BHeader>
+<BContent Padding="true">
+    <BButton OnClick="ShowActionActionSheet">Show Action Sheet</BButton>
+    <BActionSheet Id="ActionSheetExample" @ref="ActionSheetRef">
+        <BActionSheetButton Text="Update"></BActionSheetButton>
+        <BActionSheetButton Type="danger" Text="Delete"></BActionSheetButton>
+    </BActionSheet>
+</BContent>
+
+@code {
+    BActionSheet? ActionSheetRef;
+
+    async Task ShowActionActionSheet()
+    {
+        if (ActionSheetRef is not null)
+            await ActionSheetRef.Show();
+    }
+}
