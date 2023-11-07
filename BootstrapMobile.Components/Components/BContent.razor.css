@@ -25,7 +25,7 @@ div {
 }
 
 .footer_present {
-    padding-bottom: 0;
+    padding-bottom: var(--app-padding);
 }
 
 .header_present {

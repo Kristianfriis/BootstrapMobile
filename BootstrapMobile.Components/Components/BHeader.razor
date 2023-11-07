@@ -3,17 +3,17 @@
       <div class="container-fluid">
         @if (BackButton)
         {
-            <BIconButton Icon="oi oi-chevron-left" OnClick="Back" Visible="BackButton"></BIconButton>
+            <BIconButton Icon="bi bi-chevron-left" OnClick="Back" Visible="BackButton"></BIconButton>
         }
 
         @if(!BackButton && BApp!.Hamburger)
         {
-            <BIconButton Icon="oi oi-menu" Size="fs-4" data-bs-toggle="offcanvas" data-bs-target="@Constants.OffCanvasTarget" aria-controls="offcanvasExample" />
+            <BIconButton Icon="bi bi-list" Size="fs-2" data-bs-toggle="offcanvas" data-bs-target="@Constants.OffCanvasTarget" aria-controls="offcanvasExample" />
         }
 
         @if (!BackButton && !BApp!.Hamburger)
         {
-            <BIconButton Icon="oi oi-chevron-left" OnClick="Back" Visible="false"></BIconButton>
+            <BIconButton Icon="bi bi-chevron-left" OnClick="Back" Visible="false"></BIconButton>
         }
 
 
@@ -25,7 +25,7 @@
          <!-- Icon Button -->
             @if(HeaderIcon == null)
             {
-                <BIconButton Icon="oi oi-chevron-left" OnClick="Back" Visible="false"></BIconButton>
+                <BIconButton Icon="bi bi-chevron-left" OnClick="Back" Visible="false"></BIconButton>
             }else
             {
             @HeaderIcon
@@ -53,10 +53,10 @@
 
     private string CreateClass()
     {
-        var className = "oi oi-chevron-left fs-4 invisible align-middle";
+        var className = "bi bi-chevron-left fs-2 invisible align-middle";
 
         if (BackButton)
-            className = "oi oi-chevron-left fs-4 align-middle";
+            className = "bi bi-chevron-left fs-2 align-middle";
 
         return className;
     }

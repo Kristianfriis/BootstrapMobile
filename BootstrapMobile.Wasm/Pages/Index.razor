@@ -1,11 +1,14 @@
 ﻿@page "/"
+@using BootstrapMobile.Components.Enums;
+@using BootstrapMobile.Components.JsInterop;
 @using BootstrapMobile.JsInterop;
 @inject BToastService toastService
 @inject MobileBootstrapInterop MobileBootstrapInterop
+@inject DarkModeService DarkModeService
 <PageTitle>Index</PageTitle>
 <BHeader Title="Index">
     <HeaderIcon>
-        <BIconButton Icon="oi oi-cog" OnClick="Test"></BIconButton>
+        <BIconButton Icon="bi bi-gear-fill" OnClick="Test"></BIconButton>
     </HeaderIcon>
 </BHeader>
 <BContent Padding="true">
@@ -78,6 +81,9 @@
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#demomodal">
         Launch demo modal
     </button>
+    <BDivider Size="2" />
+    <h3>DarkMode</h3>
+    <BButton OnClick="ToggleDarkMode">Toggle Darkmode</BButton>
 
     <BModal @ref="modalReference" Title="@Title" FullScreen="@FullScreen" Id="demomodal">
         <Body>
@@ -132,6 +138,14 @@
     private void Test()
     {
         Console.WriteLine("it worked");
+    }
+
+    bool darkmode = false;
+    private async Task ToggleDarkMode()
+    {
+        darkmode = !darkmode;
+        var mode = darkmode ? ColorMode.Dark : ColorMode.Default;
+        await DarkModeService.ToggleDarkMode(mode);
     }
 
     private string Title = "Start Modal";

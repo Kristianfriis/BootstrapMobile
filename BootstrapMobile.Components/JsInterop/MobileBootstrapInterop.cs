@@ -32,7 +32,6 @@ public class MobileBootstrapInterop : IAsyncDisposable
         await module.InvokeVoidAsync("setThemeColor", color);
     }
 
-
     public async ValueTask DisposeAsync()
     {
         if (moduleTask.IsValueCreated)
