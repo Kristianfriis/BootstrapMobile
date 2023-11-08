@@ -85,7 +85,7 @@
     <h3>DarkMode</h3>
     <BButton OnClick="ToggleDarkMode">Toggle Darkmode</BButton>
 
-    <BModal @ref="modalReference" Title="@Title" FullScreen="@FullScreen" Id="demomodal">
+    <BModal @ref="modalReference" Title="@Title" FullScreen="@FullScreen" Id="demomodal" OnModelClosed="Test">
         <Body>
             <BItem>
                 <BLabel>

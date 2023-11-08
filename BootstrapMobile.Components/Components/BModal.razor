@@ -5,7 +5,7 @@
         <div class="modal-content" style="height: 100%;">
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">@Title</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" @onclick="CloseByX" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 @Body
@@ -24,9 +24,23 @@
     [Parameter] public bool FullScreen { get; set; }
     [Parameter] public bool Scrollable { get; set; }
     [Parameter] public string Id { get; set; } = string.Empty;
+    [Parameter] public EventCallback OnModelClosed { get; set; }
 
     string fullScreen => FullScreen ? "modal-centered" : "";
     string scrollable => Scrollable ? " modal-dialog-scrollable" : "";
+
+    protected override void OnInitialized()
+    {
+        Id = string.IsNullOrEmpty(Id) ? Guid.NewGuid().ToString() : Id;
+    }
+
+    private async Task CloseByX()
+    {
+        if (OnModelClosed.HasDelegate)
+            await OnModelClosed.InvokeAsync();
+
+        await Hide();
+    }
 
     public async Task Hide()
     {
