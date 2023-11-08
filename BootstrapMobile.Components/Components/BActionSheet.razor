@@ -17,6 +17,7 @@
     [Parameter] public RenderFragment? ChildContent { get; set; }
     [Parameter] public string Title { get; set; } = string.Empty;
     [Parameter] public string Id { get; set; } = string.Empty;
+    [Parameter] public int ZIndex { get; set; } = 1045;
     private int NumberOfButtons = -1;
 
     public async Task Hide()
@@ -40,6 +41,6 @@
 
         var height = minHeight + (10 * NumberOfButtons);
 
-        return $"height: {height}vh";
+        return $"height: {height}vh; z-index: {ZIndex}";
     }
 }
