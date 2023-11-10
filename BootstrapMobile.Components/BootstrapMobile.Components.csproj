@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>BootstrapMobile</Title>
-	<PackageVersion>1.2.0</PackageVersion>
+	<PackageVersion>1.2.1</PackageVersion>
 	<PackageProjectUrl>https://github.com/Kristianfriis/BootstrapMobile/</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/Kristianfriis/BootstrapMobile</RepositoryUrl>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
