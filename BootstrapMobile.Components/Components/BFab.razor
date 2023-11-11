@@ -1,12 +1,23 @@
-﻿<div class="sub-button shadow">
-    <a @onclick="InvokeParentMethod">
-        <span class="@Icon"></span>
-    </a>
-</div>
+﻿<a class="float btn-primary" @onclick="InvokeParentMethod" style="bottom: @bottom">
+    <i class="@Icon my-float"></i>
+</a>
 
 @code {
     [Parameter] public EventCallback OnClick { get; set; }
     [Parameter] public string Icon { get; set; } = string.Empty;
+    [CascadingParameter] public BApp? Parent { get; set; }
+    [CascadingParameter] public bool? Tabbar { get; set; }
+
+    string bottom => Tabbar ?? false ? "11vh;" : "2vh";
+
+    protected override void OnInitialized()
+    {
+        if (Parent == null && Tabbar == null)
+            throw new ArgumentException("Either Tabbar bool has to set, or BFab has to be used within a BApp context.");
+
+        if (Parent != null)
+            Tabbar = Parent.Tabbar;
+    }
 
     bool hasDelegate => OnClick.HasDelegate;
 

@@ -1,4 +1,6 @@
-﻿<div class="navbar fixed-bottom border-top">
+﻿@implements IDisposable
+
+<div class="navbar fixed-bottom border-top">
     <ul class="nav nav-fill" >
         @ChildContent
     </ul>
@@ -12,5 +14,11 @@
     {
         if (BApp != null)
             BApp.Tabbar = true;
+    }
+
+    void IDisposable.Dispose()
+    {
+        if (BApp != null)
+            BApp.Tabbar = false;
     }
 }

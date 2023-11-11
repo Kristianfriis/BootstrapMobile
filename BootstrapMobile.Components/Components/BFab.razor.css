@@ -1,0 +1,28 @@
+.float {
+    position: fixed;
+    width: 3.7rem;
+    height: 3.7rem;
+    right: 2vh;
+    background-color: var(--bs-btn-bg);
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 1000;
+}
+
+    .float:hover{
+        cursor: pointer;
+    }
+
+    .my-float {
+        font-size: 2.5rem;
+    }
+
+.float:not(:active) {
+    transition: background-color ease-in 0.5s;
+}
+
+.float:active {
+    background: var(--bs-btn-active-bg);
+}
