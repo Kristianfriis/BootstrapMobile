@@ -1,4 +1,14 @@
-﻿<main id="main_app" class="@GetClass()">
+﻿@using BootstrapMobile.Components.JsInterop;
+@inject IJSRuntime JSRuntime
+@inject DarkModeService DarkmodeService
+
+<HeadContent>
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="@DarkmodeService.ThemeColor">
+    <meta name="msapplication-TileColor" content="@DarkmodeService.ThemeColor">
+    <meta name="theme-color" content="@DarkmodeService.ThemeColor">
+</HeadContent>
+
+<main id="main_app" class="@GetClass()">
     <CascadingValue Value="this">
         @ChildContent
     </CascadingValue>
@@ -10,6 +20,14 @@
     public bool Tabbar { get; set; }
     public bool Header { get; set; }
     public bool Hamburger { get; set; }
+    // string themeColor = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        DarkmodeService.OnToggleDarkmode += StateHasChanged;
+
+        await DarkmodeService.SetThemeColor();
+    }
 
     private string GetClass()
     {

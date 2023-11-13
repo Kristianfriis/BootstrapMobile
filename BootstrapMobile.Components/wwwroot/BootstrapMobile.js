@@ -366,3 +366,10 @@ var toggleDarkMode = (useDarkMode, automatic) => {
     }
 
 }
+
+var getBackgroundColor = () => {
+    var color = getComputedStyle(document.documentElement)
+        .getPropertyValue("--bs-body-bg");
+
+    return color;
+}
