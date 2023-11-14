@@ -2,11 +2,11 @@
 @inject IJSRuntime JSRuntime
 @inject DarkModeService DarkmodeService
 
-<HeadContent>
+@* <HeadContent>
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="@DarkmodeService.ThemeColor">
     <meta name="msapplication-TileColor" content="@DarkmodeService.ThemeColor">
     <meta name="theme-color" content="@DarkmodeService.ThemeColor">
-</HeadContent>
+</HeadContent> *@
 
 <main id="main_app" class="@GetClass()">
     <CascadingValue Value="this">
@@ -22,12 +22,12 @@
     public bool Hamburger { get; set; }
     // string themeColor = string.Empty;
 
-    protected override async Task OnInitializedAsync()
-    {
-        DarkmodeService.OnToggleDarkmode += StateHasChanged;
+    // protected override async Task OnInitializedAsync()
+    // {
+    //     DarkmodeService.OnToggleDarkmode += StateHasChanged;
 
-        await DarkmodeService.SetThemeColor();
-    }
+    //     await DarkmodeService.SetThemeColor();
+    // }
 
     private string GetClass()
     {

@@ -1,6 +1,6 @@
 {
-  "name": "BootstrapMobile.Wasm",
-  "short_name": "BootstrapMobile.Wasm",
+  "name": "BootstrapMobile",
+  "short_name": "BootstrapMobile",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
