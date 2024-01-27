@@ -1,0 +1,66 @@
+﻿<td class="@ClassFactory()" @onclick="@(() => ChooseDay(Weekday.Year, Weekday.Month, Weekday.Day))">
+    @if (ChildContent is not null)
+    {
+        @ChildContent
+    }
+    else
+    {
+        <span>
+            @Weekday.Day
+        </span>
+    }
+</td>
+
+@code {
+    // [Parameter]
+    // public RenderFragment<DateTime>? Template { get; set; }
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+
+    [Parameter]
+    public DateTime Weekday { get; set; }
+
+    [Parameter]
+    public DateTime? SelectedDate { get; set; }
+
+    [CascadingParameter]
+    private BCalendar? Parent { get; set; }
+
+    [Parameter]
+    public EventCallback<DateOnly> OnDatePicked { get; set; }
+
+    private DateTime today = DateTime.UtcNow;
+
+    protected override void OnInitialized()
+    {
+        if (Parent == null)
+            throw new NullReferenceException("BTableData has to be within a BCalendar component");
+
+    }
+
+    public async Task ChooseDay(int year, int month, int day)
+    {
+        var result = DateOnly.FromDateTime(new DateTime(year, month, day));
+
+        await OnDatePicked.InvokeAsync(result);
+    }
+
+    private string ClassFactory()
+    {
+        var result = "";
+
+        if (Weekday.Date.CompareTo(today.Date) == 0)
+        {
+            result = $"{result} border";
+        }
+
+        if (SelectedDate != null)
+        {
+            if (Weekday.Date.CompareTo(SelectedDate.Value.Date) == 0)
+                result = $"{result} border bg-body-secondary";
+        }
+
+        return result;
+    }
+}

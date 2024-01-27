@@ -1,0 +1,37 @@
+﻿@page "/calendar";
+
+<PageTitle>Calendar</PageTitle>
+<BHeader Title="Calendar" BackButton="true"></BHeader>
+<BContent Padding="true">
+    <h3>Calendar</h3>
+    <BCalendar OnDatePicked="SimpleDatePicked"/>
+    
+    <BDivider />
+
+    <h3>Calendar</h3>
+    <BCalendar OnDatePicked="SimpleDatePicked" OnMonthChange="SimpleMonthChange" OnYearChange="SimpleYearChange">
+        <RowTemplate>
+            <BRow>
+                <span>@context.Day</span>
+                <BIcon Size="fs-6" Icon="bi bi-check2-circle" FullWidth="true"/>
+            </BRow>
+        </RowTemplate>
+    </BCalendar>
+</BContent>
+
+@code {
+    public void SimpleDatePicked(DateTime date)
+    {
+        Console.WriteLine(date);
+    }
+
+    public void SimpleMonthChange(int month)
+    {
+        Console.WriteLine($"Month: {month}");
+    }
+
+    public void SimpleYearChange(int year)
+    {
+        Console.WriteLine($"Year: {year}");
+    }
+}
